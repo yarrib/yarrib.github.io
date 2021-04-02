@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "About"
+theme: default
 permalink: /about/
 ---
 
