@@ -1,29 +1,34 @@
----
-title: My test page
-sidebar: toc
----
+## This site contains projects, samples, and random thoughts...
 
-
-# This site contains projects, samples, and random thoughts...
-
-Surely I would have started this with a proper plan, but that would make far too much sense!
+Surely I would have started this with a proper plan, but that would make far too much sense! At any rate, lets start this off with a few simple things:
 
 [About](about.md)
 
+[Projects](projects.md)
 
-<div>
-{% for item in site.data.navlist[page.sidebar] %}
-    <h3>{{ item.title }}</h3>
-      <ul>
-        {% for entry in item.subfolderitems %}
-          <li><a href="{{ entry.url }}">{{ entry.page }}</a></li>
-        {% endfor %}
-      </ul>
-  {% endfor %}
-</div>
 
-A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here. A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here. A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here. A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here. A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here.
 
-A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here. A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here. A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here. A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here. A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here.
 
-A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here. A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here. A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here. A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here. A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[this is the cayman theme](https://github.com/pages-themes/cayman)
