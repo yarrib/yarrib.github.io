@@ -1,4 +1,4 @@
-[Back to Home](readme.md)
+[Back to Home](/)
 ## Starting list of projects
 
 <div class="row">
