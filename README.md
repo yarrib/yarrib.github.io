@@ -5,30 +5,3 @@ Surely I would have started this with a proper plan, but that would make far too
 [About](about.md)
 
 [Projects](projects.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-[this is the cayman theme](https://github.com/pages-themes/cayman)
