@@ -4,4 +4,3 @@ Surely I would have started this with a proper plan, but that would make far too
 
 [About](about.md)
 
-{% include button.html url="https://https://yarrib.github.io/about" %}
