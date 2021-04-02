@@ -6,8 +6,8 @@ Surely I would have started this with a proper plan, but that would make far too
 [About](about.md)
 
 
-
-<div>
+<link rel="stylesheet" href="{{https://yarrib.github.io/_styles/main.css}}">
+<div class="sidenav">
 {% for item in site.data.navlist.toc %}
     <h3>{{ item.title }}</h3>
       <ul>
@@ -17,9 +17,10 @@ Surely I would have started this with a proper plan, but that would make far too
       </ul>
   {% endfor %}
 </div>
- 
+<div class = "main">
 A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here. A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here. A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here. A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here. A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here.
 
 A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here. A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here. A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here. A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here. A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here.
 
 A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here. A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here. A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here. A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here. A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here.
+</div>
