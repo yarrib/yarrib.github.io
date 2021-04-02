@@ -8,7 +8,7 @@ Surely I would have started this with a proper plan, but that would make far too
 
 
 
-{% for item in site.data.toc.yml %}
+{% for item in site.data.navlist.toc %}
     <h3>{{ item.title }}</h3>
       <ul>
         {% for entry in item.subfolderitems %}
