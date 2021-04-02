@@ -7,7 +7,7 @@ Surely I would have started this with a proper plan, but that would make far too
 
 
 
-
+<div>
 {% for item in site.data.navlist.toc %}
     <h3>{{ item.title }}</h3>
       <ul>
@@ -16,3 +16,4 @@ Surely I would have started this with a proper plan, but that would make far too
         {% endfor %}
       </ul>
   {% endfor %}
+</div>
