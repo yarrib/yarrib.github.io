@@ -1,4 +1,8 @@
 
+---
+title: My test page
+sidebar: toc
+---
 # This site contains projects, samples, and random thoughts...
 
 Surely I would have started this with a proper plan, but that would make far too much sense!
@@ -6,9 +10,8 @@ Surely I would have started this with a proper plan, but that would make far too
 [About](about.md)
 
 
-<link rel="stylesheet" href="{{https://yarrib.github.io/_styles/main.css}}" type="text/css>
-<div class="sidenav">
-{% for item in site.data.navlist.toc %}
+<div>
+{% for item in site.data.navlist[page.sidebar] %}
     <h3>{{ item.title }}</h3>
       <ul>
         {% for entry in item.subfolderitems %}
@@ -17,10 +20,9 @@ Surely I would have started this with a proper plan, but that would make far too
       </ul>
   {% endfor %}
 </div>
-<div class = "main">
-A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here. A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here. A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here. A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here. A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here.
 
 A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here. A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here. A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here. A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here. A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here.
 
 A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here. A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here. A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here. A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here. A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here.
-</div>
+
+A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here. A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here. A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here. A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here. A bunch of text here. A bunch of text here. A bunch of text here.A bunch of text here.A bunch of text here.A bunch of text here.
