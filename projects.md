@@ -8,8 +8,9 @@ The following list of projects will continue to grow as I populate this site. Fo
 
 
 
-[data transformation project in Python](https://yarrib.github.io/updatemap)
-
+---
+more exciting stuff here. eventually....
+---
 
 
 <i> Any Jupyter Notebook rendering was done with the assistance of [NBViewer](https://nbviewer.jupyter.org)</i>
