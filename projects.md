@@ -8,7 +8,7 @@ The following list of projects will continue to grow as I populate this site. Fo
 
 [Predicting Dangerous Asteroids - A Kaggle Project never submitted...](https://github.com/yarrib/PredictingDangerousAsteroids))
 - [view](https://github.com/yarrib/PredictingDangerousAsteroids/blob/523954e47d410473f656857dfed3804058d79dfb/PredictingDangerousAsteroidsV2.md)
-
+- [other view](https://yarrib.github.io/md_files_from_r/PredictingDangerousAsteroidsV2.md)
 
 
 
