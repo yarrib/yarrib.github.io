@@ -7,7 +7,7 @@ The following list of projects will continue to grow as I populate this site. Fo
  - [View Jupyter Notebook](https://nbviewer.jupyter.org/github/yarrib/ExcelDataCollectionParser/blob/2797e0dbe34e15eba88d75305c651034f788106c/process%20files.ipynb)
 
 [Predicting Dangerous Asteroids - A Kaggle Project never submitted...](https://github.com/yarrib/PredictingDangerousAsteroids)
-- [View Rmd Rendering](https://yarrib.github.io/md_files_from_r/PredictingDangerousAsteroidsV2.md)
+- [View Rmd Rendering](/md_files_from_r/PredictingDangerousAsteroidsV2.md)
 
 **future additions**
 
