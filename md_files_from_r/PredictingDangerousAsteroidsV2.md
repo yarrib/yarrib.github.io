@@ -1,13 +1,13 @@
 ---
 title: "Predicting Dangerous Asteroids"
 author: "Yarri Bryn"
-date: "12/14/2020"
+date: "2020-12-14"
 output:
   html_document:
     df_print: paged
     keep_md: TRUE
 ---
-*revised 8/4/2021 on a different laptop (MBP vs old Dell i7). Should work with r4.0 and later.*
+*revised 2021-08-04 on a different laptop (MBP vs old Dell i7). Should work with r4.0 and later.*
 
 
 # Predicting Dangerous Asteroids
