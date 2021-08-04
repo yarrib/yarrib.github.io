@@ -9,10 +9,13 @@ The following list of projects will continue to grow as I populate this site. Fo
 [Predicting Dangerous Asteroids - A Kaggle Project never submitted...](https://github.com/yarrib/PredictingDangerousAsteroids)
 - [View Rmd Rendering](https://yarrib.github.io/md_files_from_r/PredictingDangerousAsteroidsV2.md)
 
+**future additions**
 
+Traveling Salesman Implementation (pretty much from scratch) in Java - for a course project in Fall 2020.
 
+A data transformation utility program in python for taking some schedule, expanding it to individual instances, transforming it, and writing it to a new file (in production its to a sql server database, but the example shows it writing to csv for simplicity).
 
-
+A time series forecasting model using Facebooks Prophet library in python. used to forecase call volume by day for a call center.
 
 
 
