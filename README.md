@@ -1,6 +1,8 @@
 ## This site contains projects, samples, and random thoughts...
 
-Surely I would have started this with a proper plan, but that would make far too much sense! At any rate, lets start this off with a few simple things:
+This site will be a growing collection of information and project examples in the data science realm, select personal information, and (eventually) some sort of blog.
+
+Currently the projects are probably pretty basic and are here to serve as a self-introduction to this domain. I don't come from a stem background - marketing major in college - but I'm working on a M.S. in Data Science. I'm attempting to pivot career direction by learning a lot of new things.
 
 [About](about.md)
 
