@@ -9,6 +9,7 @@ output:
 ---
 *revised 2021-08-04 on a different laptop (MBP vs old Dell i7). Should work with r4.0 and later.*
 
+[Back](/projects.md)
 
 # Predicting Dangerous Asteroids
 
