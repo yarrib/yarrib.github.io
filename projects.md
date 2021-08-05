@@ -8,14 +8,20 @@ The following list of projects will continue to grow as I populate this site. Fo
 - [View Jupyter Notebook](https://nbviewer.jupyter.org/github/yarrib/ExcelDataCollectionParser/blob/2797e0dbe34e15eba88d75305c651034f788106c/process%20files.ipynb)
 - Implemented in Python
 
+
+
 [Predicting Dangerous Asteroids - A Kaggle Project never submitted...](https://github.com/yarrib/PredictingDangerousAsteroids)
 
 - [View Rmd Rendering](/md_files_from_r/PredictingDangerousAsteroidsV2.md)
 - Implemented in R
 
+
+
 [My attempt at a traveling salesman problem](https://github.com/yarrib/PredictingDangerousAsteroids)
 
 - Implemented in Java
+
+
 
 --- 
 
