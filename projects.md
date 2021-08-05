@@ -17,7 +17,7 @@ The following list of projects will continue to grow as I populate this site. Fo
 
 
 
-[My attempt at a traveling salesman problem](https://github.com/yarrib/PredictingDangerousAsteroids)
+[My attempt at a traveling salesman problem](https://github.com/yarrib/TravelingSalesmanImplementation)
 
 - Implemented in Java
 
