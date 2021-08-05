@@ -140,13 +140,13 @@ This is the final version, but a lot of manual hyperparameter tuning occured. Ce
 ggplot(gbmFit) + ggtitle("Gradient Boosting")
 ```
 
-![](PredictingDangerousAsteroidsV2_files/figure-html/model exploration-1.png)<!-- -->
+![](https://github.com/yarrib/PredictingDangerousAsteroidsV2_files/figure-html/model exploration-1.png)<!-- -->
 
 ```r
 ggplot(svmLinFit) + ggtitle("Support Vector Machine (Linear Kernel)");
 ```
 
-![](PredictingDangerousAsteroidsV2_files/figure-html/model exploration-2.png)<!-- -->
+![](https://github.com/yarrib/PredictingDangerousAsteroidsV2_files/figure-html/model exploration-2.png)<!-- -->
 
 ```r
 # collect resamples
@@ -197,7 +197,7 @@ summary(results)
 bwplot(results)
 ```
 
-![](PredictingDangerousAsteroidsV2_files/figure-html/model exploration-3.png)<!-- -->
+![](https://github.com/yarrib/PredictingDangerousAsteroidsV2_files/figure-html/model exploration-3.png)<!-- -->
 
 ```r
 # the text based confusion matrices on the fitted models.
@@ -312,7 +312,7 @@ glm_cm <- confusionMatrix(glm_pred, test$pha,positive = "PHA", mode = 'prec_reca
 draw_confusion_matrix(glm_cm, "Logistic Regression")
 ```
 
-![](PredictingDangerousAsteroidsV2_files/figure-html/evaluation-1.png)<!-- -->
+![](https://github.com/yarrib/PredictingDangerousAsteroidsV2_files/figure-html/evaluation-1.png)<!-- -->
 
 ```r
 gbm_pred <- predict(gbmFit, test)
@@ -320,7 +320,7 @@ gbm_cm <- confusionMatrix(glm_pred, test$pha, positive = "PHA", mode = 'prec_rec
 draw_confusion_matrix(gbm_cm, "Gradient Boosting")
 ```
 
-![](PredictingDangerousAsteroidsV2_files/figure-html/evaluation-2.png)<!-- -->
+![](https://github.com/yarrib/PredictingDangerousAsteroidsV2_files/figure-html/evaluation-2.png)<!-- -->
 
 ```r
 ada_pred <- predict(adaFit, test)
@@ -328,7 +328,7 @@ ada_cm <- confusionMatrix(ada_pred, test$pha, positive = "PHA",mode = 'prec_reca
 draw_confusion_matrix(ada_cm, "Adaboost (Tree)")
 ```
 
-![](PredictingDangerousAsteroidsV2_files/figure-html/evaluation-3.png)<!-- -->
+![](https://github.com/yarrib/PredictingDangerousAsteroidsV2_files/figure-html/evaluation-3.png)<!-- -->
 
 ```r
 rf_pred <- predict(rfFit, test)
@@ -336,7 +336,7 @@ rf_cm <- confusionMatrix(rf_pred, test$pha, positive = "PHA", mode = 'prec_recal
 draw_confusion_matrix(rf_cm, "Random Forest")
 ```
 
-![](PredictingDangerousAsteroidsV2_files/figure-html/evaluation-4.png)<!-- -->
+![](https://github.com/yarrib/PredictingDangerousAsteroidsV2_files/figure-html/evaluation-4.png)<!-- -->
 
 ```r
 svm_pred <- predict(svmLinFit, test)
@@ -344,7 +344,7 @@ svm_cm <- confusionMatrix(svm_pred, test$pha, positive = "PHA", mode = 'prec_rec
 draw_confusion_matrix(svm_cm, "Support Vector Machine, Linear")
 ```
 
-![](PredictingDangerousAsteroidsV2_files/figure-html/evaluation-5.png)<!-- -->
+![](https://github.com/yarrib/PredictingDangerousAsteroidsV2_files/figure-html/evaluation-5.png)<!-- -->
 
 ## Step 5: Conclusion
 
