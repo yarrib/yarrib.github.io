@@ -19,7 +19,7 @@ about:
 Yarri Bryn is a Data Scientist at Wipfli LLP. 
 Yarri is married with one kiddo, Mateo, whom he hopes will grow up to be curious. 
 He also likes golf, spending time outdoors, and various athletic and non-athletic hobbies.
-
+  
 
 ## Education
 
@@ -45,3 +45,23 @@ Self-Employed | Professional Golfer (limited success) | September 2017 - October
 <div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="89155f7a-fb11-4942-b40c-8fb74ff882a3" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 <div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="7bfd1940-e3bc-49d5-af90-060da680f0a4" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 <div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="0fdbb816-ed03-4f3e-9951-2027403f34f9" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
+## Skills
+
+- Soft Skills
+  + Communication
+  + Collaboration
+  + Problem Solving
+- Technical Skills
+  + Data Engineering
+  + Machine Learning
+  + DevOps/MLOps
+  + Infrastructure as Code
+- Tools
+  + Microsoft: Azure Synapse Analytics (and ADF), AzureML, SQL Server, PowerBI
+  + Open Source: Git, Shell (bash/zsh), Anaconda, Docker
+  + Other: Terraform
+- Languages
+  + Python
+  + SQL
+  + Spark/PySpark

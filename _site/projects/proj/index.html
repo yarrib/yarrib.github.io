@@ -9,7 +9,7 @@
 <meta name="author" content="Yarri Bryn">
 <meta name="dcterms.date" content="2022-12-29">
 
-<title>yarrib.github.io - Test Blog Post</title>
+<title>yarrib.github.io - Test Project Post</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -169,54 +169,248 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">Test Blog Post</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Yarri Bryn </p>
-            </div>
-    </div>
-      
-      <div>
-      <div class="quarto-title-meta-heading">Published</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date">December 29, 2022</p>
-      </div>
-    </div>
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Test Project Post</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<div class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># this is a random code cell</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> some_func(x:<span class="bu">int</span>):</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    seq <span class="op">=</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">0</span>,x))</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> [(x,x<span class="op">**</span><span class="dv">2</span>,x<span class="op">**</span><span class="dv">3</span>) <span class="cf">for</span> x <span class="kw">in</span> seq]</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>some_func(<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="1">
-<pre><code>[(0, 0, 0), (1, 1, 1), (2, 4, 8), (3, 9, 27), (4, 16, 64)]</code></pre>
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Yarri Bryn </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">December 29, 2022</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1000</span>):</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> i<span class="op">%</span><span class="dv">5</span> <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f'the number </span><span class="sc">{</span>i<span class="sc">}</span><span class="ss"> is cleanly divisible by 5'</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>        </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>the number 0 is cleanly divisible by 5
+the number 5 is cleanly divisible by 5
+the number 10 is cleanly divisible by 5
+the number 15 is cleanly divisible by 5
+the number 20 is cleanly divisible by 5
+the number 25 is cleanly divisible by 5
+the number 30 is cleanly divisible by 5
+the number 35 is cleanly divisible by 5
+the number 40 is cleanly divisible by 5
+the number 45 is cleanly divisible by 5
+the number 50 is cleanly divisible by 5
+the number 55 is cleanly divisible by 5
+the number 60 is cleanly divisible by 5
+the number 65 is cleanly divisible by 5
+the number 70 is cleanly divisible by 5
+the number 75 is cleanly divisible by 5
+the number 80 is cleanly divisible by 5
+the number 85 is cleanly divisible by 5
+the number 90 is cleanly divisible by 5
+the number 95 is cleanly divisible by 5
+the number 100 is cleanly divisible by 5
+the number 105 is cleanly divisible by 5
+the number 110 is cleanly divisible by 5
+the number 115 is cleanly divisible by 5
+the number 120 is cleanly divisible by 5
+the number 125 is cleanly divisible by 5
+the number 130 is cleanly divisible by 5
+the number 135 is cleanly divisible by 5
+the number 140 is cleanly divisible by 5
+the number 145 is cleanly divisible by 5
+the number 150 is cleanly divisible by 5
+the number 155 is cleanly divisible by 5
+the number 160 is cleanly divisible by 5
+the number 165 is cleanly divisible by 5
+the number 170 is cleanly divisible by 5
+the number 175 is cleanly divisible by 5
+the number 180 is cleanly divisible by 5
+the number 185 is cleanly divisible by 5
+the number 190 is cleanly divisible by 5
+the number 195 is cleanly divisible by 5
+the number 200 is cleanly divisible by 5
+the number 205 is cleanly divisible by 5
+the number 210 is cleanly divisible by 5
+the number 215 is cleanly divisible by 5
+the number 220 is cleanly divisible by 5
+the number 225 is cleanly divisible by 5
+the number 230 is cleanly divisible by 5
+the number 235 is cleanly divisible by 5
+the number 240 is cleanly divisible by 5
+the number 245 is cleanly divisible by 5
+the number 250 is cleanly divisible by 5
+the number 255 is cleanly divisible by 5
+the number 260 is cleanly divisible by 5
+the number 265 is cleanly divisible by 5
+the number 270 is cleanly divisible by 5
+the number 275 is cleanly divisible by 5
+the number 280 is cleanly divisible by 5
+the number 285 is cleanly divisible by 5
+the number 290 is cleanly divisible by 5
+the number 295 is cleanly divisible by 5
+the number 300 is cleanly divisible by 5
+the number 305 is cleanly divisible by 5
+the number 310 is cleanly divisible by 5
+the number 315 is cleanly divisible by 5
+the number 320 is cleanly divisible by 5
+the number 325 is cleanly divisible by 5
+the number 330 is cleanly divisible by 5
+the number 335 is cleanly divisible by 5
+the number 340 is cleanly divisible by 5
+the number 345 is cleanly divisible by 5
+the number 350 is cleanly divisible by 5
+the number 355 is cleanly divisible by 5
+the number 360 is cleanly divisible by 5
+the number 365 is cleanly divisible by 5
+the number 370 is cleanly divisible by 5
+the number 375 is cleanly divisible by 5
+the number 380 is cleanly divisible by 5
+the number 385 is cleanly divisible by 5
+the number 390 is cleanly divisible by 5
+the number 395 is cleanly divisible by 5
+the number 400 is cleanly divisible by 5
+the number 405 is cleanly divisible by 5
+the number 410 is cleanly divisible by 5
+the number 415 is cleanly divisible by 5
+the number 420 is cleanly divisible by 5
+the number 425 is cleanly divisible by 5
+the number 430 is cleanly divisible by 5
+the number 435 is cleanly divisible by 5
+the number 440 is cleanly divisible by 5
+the number 445 is cleanly divisible by 5
+the number 450 is cleanly divisible by 5
+the number 455 is cleanly divisible by 5
+the number 460 is cleanly divisible by 5
+the number 465 is cleanly divisible by 5
+the number 470 is cleanly divisible by 5
+the number 475 is cleanly divisible by 5
+the number 480 is cleanly divisible by 5
+the number 485 is cleanly divisible by 5
+the number 490 is cleanly divisible by 5
+the number 495 is cleanly divisible by 5
+the number 500 is cleanly divisible by 5
+the number 505 is cleanly divisible by 5
+the number 510 is cleanly divisible by 5
+the number 515 is cleanly divisible by 5
+the number 520 is cleanly divisible by 5
+the number 525 is cleanly divisible by 5
+the number 530 is cleanly divisible by 5
+the number 535 is cleanly divisible by 5
+the number 540 is cleanly divisible by 5
+the number 545 is cleanly divisible by 5
+the number 550 is cleanly divisible by 5
+the number 555 is cleanly divisible by 5
+the number 560 is cleanly divisible by 5
+the number 565 is cleanly divisible by 5
+the number 570 is cleanly divisible by 5
+the number 575 is cleanly divisible by 5
+the number 580 is cleanly divisible by 5
+the number 585 is cleanly divisible by 5
+the number 590 is cleanly divisible by 5
+the number 595 is cleanly divisible by 5
+the number 600 is cleanly divisible by 5
+the number 605 is cleanly divisible by 5
+the number 610 is cleanly divisible by 5
+the number 615 is cleanly divisible by 5
+the number 620 is cleanly divisible by 5
+the number 625 is cleanly divisible by 5
+the number 630 is cleanly divisible by 5
+the number 635 is cleanly divisible by 5
+the number 640 is cleanly divisible by 5
+the number 645 is cleanly divisible by 5
+the number 650 is cleanly divisible by 5
+the number 655 is cleanly divisible by 5
+the number 660 is cleanly divisible by 5
+the number 665 is cleanly divisible by 5
+the number 670 is cleanly divisible by 5
+the number 675 is cleanly divisible by 5
+the number 680 is cleanly divisible by 5
+the number 685 is cleanly divisible by 5
+the number 690 is cleanly divisible by 5
+the number 695 is cleanly divisible by 5
+the number 700 is cleanly divisible by 5
+the number 705 is cleanly divisible by 5
+the number 710 is cleanly divisible by 5
+the number 715 is cleanly divisible by 5
+the number 720 is cleanly divisible by 5
+the number 725 is cleanly divisible by 5
+the number 730 is cleanly divisible by 5
+the number 735 is cleanly divisible by 5
+the number 740 is cleanly divisible by 5
+the number 745 is cleanly divisible by 5
+the number 750 is cleanly divisible by 5
+the number 755 is cleanly divisible by 5
+the number 760 is cleanly divisible by 5
+the number 765 is cleanly divisible by 5
+the number 770 is cleanly divisible by 5
+the number 775 is cleanly divisible by 5
+the number 780 is cleanly divisible by 5
+the number 785 is cleanly divisible by 5
+the number 790 is cleanly divisible by 5
+the number 795 is cleanly divisible by 5
+the number 800 is cleanly divisible by 5
+the number 805 is cleanly divisible by 5
+the number 810 is cleanly divisible by 5
+the number 815 is cleanly divisible by 5
+the number 820 is cleanly divisible by 5
+the number 825 is cleanly divisible by 5
+the number 830 is cleanly divisible by 5
+the number 835 is cleanly divisible by 5
+the number 840 is cleanly divisible by 5
+the number 845 is cleanly divisible by 5
+the number 850 is cleanly divisible by 5
+the number 855 is cleanly divisible by 5
+the number 860 is cleanly divisible by 5
+the number 865 is cleanly divisible by 5
+the number 870 is cleanly divisible by 5
+the number 875 is cleanly divisible by 5
+the number 880 is cleanly divisible by 5
+the number 885 is cleanly divisible by 5
+the number 890 is cleanly divisible by 5
+the number 895 is cleanly divisible by 5
+the number 900 is cleanly divisible by 5
+the number 905 is cleanly divisible by 5
+the number 910 is cleanly divisible by 5
+the number 915 is cleanly divisible by 5
+the number 920 is cleanly divisible by 5
+the number 925 is cleanly divisible by 5
+the number 930 is cleanly divisible by 5
+the number 935 is cleanly divisible by 5
+the number 940 is cleanly divisible by 5
+the number 945 is cleanly divisible by 5
+the number 950 is cleanly divisible by 5
+the number 955 is cleanly divisible by 5
+the number 960 is cleanly divisible by 5
+the number 965 is cleanly divisible by 5
+the number 970 is cleanly divisible by 5
+the number 975 is cleanly divisible by 5
+the number 980 is cleanly divisible by 5
+the number 985 is cleanly divisible by 5
+the number 990 is cleanly divisible by 5
+the number 995 is cleanly divisible by 5</code></pre>
 </div>
 </div>
 

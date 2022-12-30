@@ -6,13 +6,14 @@ website:
   navbar:
     right:
       - about.qmd
+      - projects.qmd
       - icon: github
         href: https://github.com/
       - icon: twitter
         href: https://twitter.com
 format:
   html:
-    theme: cosmo
+    theme: flatly
     css: styles.css
 
 
