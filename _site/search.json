@@ -1,30 +1,30 @@
 [
   {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
+    "objectID": "posts/post-12-29-2022/index.html",
+    "href": "posts/post-12-29-2022/index.html",
+    "title": "Test Blog Post",
     "section": "",
-    "text": "This is a post with executable code."
-  },
-  {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
-    "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+    "text": "# this is a random code cell\n\ndef some_func(x:int):\n    seq = list(range(0,x))\n    return [(x,x**2,x**3) for x in seq]\n\nsome_func(5)\n\n[(0, 0, 0), (1, 1, 1), (2, 4, 8), (3, 9, 27), (4, 16, 64)]"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "yarrib.github.io",
     "section": "",
-    "text": "Post With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nDec 30, 2022\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTest Blog Post\n\n\n\n\n\n\n\n\n\n\n\n\nDec 29, 2022\n\n\nYarri Bryn\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nDec 27, 2022\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "Test Blog Post\n\n\n\n\n\n\n\n\n\n\n\n\nDec 29, 2022\n\n\nYarri Bryn\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "About Yarri",
     "section": "",
-    "text": "About this blog"
+    "text": "LinkedIn\n  \n  \n    \n     Github\n  \n\n  \n  \nYarri Bryn is a Data Scientist at Wipfli LLP. Yarri is married with one kiddo, Mateo, whom he hopes will grow up to be curious. He also likes golf, spending time outdoors, and various athletic and non-athletic hobbies.\n\n\nUniversity of Wisconsin - Eau Claire | Eau Claire, WI M.S. in Data Science | Sept 2019 - May 2022\nUniversity of Northern Iowa | Cedar Falls, Iowa B.A. in Marketing Management | Sept 2009 - May 2013\n\n\n\nWipfli LLP | Data Scientist / Data Engineer | January 2022-Present\nMinneapolis Park and Recreation Board | Parking & Business Systems Professional\nSelf-Employed | Professional Golfer (limited success) | September 2017 - October 2017"
+  },
+  {
+    "objectID": "about.html#certifications",
+    "href": "about.html#certifications",
+    "title": "About Yarri",
+    "section": "Certifications",
+    "text": "Certifications"
   }
 ]
