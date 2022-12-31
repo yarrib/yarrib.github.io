@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Yarri Bryn">
-<meta name="dcterms.date" content="2022-12-29">
+<meta name="dcterms.date" content="2022-12-31">
 
-<title>yarrib.github.io - Test Blog Post</title>
+<title>yarrib.github.io - Why would I blog?</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -172,8 +172,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Test Blog Post</h1>
-                      </div>
+      <h1 class="title">Why would I blog?</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">news</div>
+                <div class="quarto-category">general</div>
+              </div>
+                  </div>
   </div>
     
   
@@ -189,7 +193,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">December 29, 2022</p>
+        <p class="date">December 31, 2022</p>
       </div>
     </div>
     
@@ -207,20 +211,112 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 
-<div class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># this is a random code cell</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> some_func(x:<span class="bu">int</span>):</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    seq <span class="op">=</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">0</span>,x))</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> [(x,x<span class="op">**</span><span class="dv">2</span>,x<span class="op">**</span><span class="dv">3</span>) <span class="cf">for</span> x <span class="kw">in</span> seq]</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>some_func(<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="1">
-<pre><code>[(0, 0, 0), (1, 1, 1), (2, 4, 8), (3, 9, 27), (4, 16, 64)]</code></pre>
+<section id="why-would-i-blog" class="level1">
+<h1>Why would I blog?</h1>
+<p><img src="ameen-fahmy-_gEKtyIbRSM-unsplash.jpg" title="" alt="" width="400px"></p>
+<p>Photo by <a href="https://unsplash.com/@ameenfahmy?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Ameen Fahmy</a> on <a href="https://unsplash.com/s/photos/idea?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>]</p>
+<p>The main reason I’m starting this blog is because I’ve been hesitant to do so. I prefer not to share too much information, so this is in a sense, a bit of a personal challenge. Also, Jeremy and Rachel over at <a href="https://fast.ai/">FastAI</a> are adament about blogging as a means of learning deep learning (or any topic for that matter).</p>
+<p>But I’m going to do things a little differently, in my own style, and will probably break a bunch of blogging rules because I don’t know any nor do I care to look them up. I’m going to be mixing thoughts and ideas with data science code snippets and projects. While I have some ideas for upcoming posts I also am likely to interject random tutorials which I would consider <em>things that are important but I didn’t find a good answer to</em>.</p>
+<p>The goal of this endeavor isn’t to make money, become influential, or anything like that. It is simply to get comfortable being uncomfortable in posting content and sharing thoughts, ideas and projects. The personal gain from this won’t come from visitors (if noone reads this, whatever!), but from committing to the habit and practicing it.</p>
+<p>So with that, lets go through a random code snippet that could be helpful.</p>
+<hr>
+<section id="comprehensions-in-python" class="level3">
+<h3 class="anchored" data-anchor-id="comprehensions-in-python">Comprehensions in Python</h3>
+<p><strong>Lists</strong></p>
+<p>First we need a list to work with, which is easy enough to create in python:</p>
+<div class="cell" data-execution_count="39">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>list_1 <span class="op">=</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">25</span>))</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(list_1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]</code></pre>
+</div>
+</div>
+<p>Ok, so we have a list. Lets find the odd numbers using loops:</p>
+<div class="cell" data-execution_count="40">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>odd_nums <span class="op">=</span> []</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> item <span class="kw">in</span> list_1:</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> item<span class="op">%</span><span class="dv">2</span> <span class="op">!=</span> <span class="dv">0</span>:</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>        odd_nums.append(item)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(odd_nums)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23]</code></pre>
+</div>
+</div>
+<p>Well that works, but kind of long winded. A list comp can shorten it up for us:</p>
+<div class="cell" data-execution_count="41">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>odd_nums_lc <span class="op">=</span> [item <span class="cf">for</span> item <span class="kw">in</span> list_1 <span class="cf">if</span> item<span class="op">%</span><span class="dv">2</span> <span class="op">!=</span> <span class="dv">0</span>]</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(odd_nums_lc)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23]</code></pre>
+</div>
+</div>
+<p>So that is how list comprehensions are cool. The also works for nested lists, with Pandas DataFrames, and many other use cases.</p>
+<p>It should be noted however, that comprehensions can be harder to read, so extensively nested statements might be best being split up or incorporating some sort of loop or helper function.</p>
+<p><strong>Dicts</strong></p>
+<p>Well we need a dict, so lets take some text and do a word count. We will use the first 2 paragraphs from the <a href="https://en.wikipedia.org/wiki/Gandalf_">Wikipedia entry for Gandalf</a></p>
+<div class="cell" data-execution_count="44">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>gandalf <span class="op">=</span> <span class="st">"""</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="st">Gandalf is a protagonist in J. R. R. Tolkien's novels The Hobbit and The Lord of the Rings. </span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="st">He is a wizard, one of the Istari order, and the leader of the Fellowship of the Ring. Tolkien took the </span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="st">name "Gandalf" from the Old Norse "Catalogue of Dwarves" (Dvergatal) in the Völuspá.</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="st">As a wizard and the bearer of one of the Three Rings, Gandalf has great power, but works mostly by </span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="st">encouraging and persuading. He sets out as Gandalf the Grey, possessing great knowledge and </span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="st">travelling continually. Gandalf is focused on the mission to counter the Dark Lord Sauron by </span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="st">destroying the One Ring. He is associated with fire; his ring of power is Narya, the Ring of </span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="st">Fire. As such, he delights in fireworks to entertain the hobbits of the Shire, while in great </span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="st">need he uses fire as a weapon. As one of the Maiar, he is an immortal spirit from Valinor, </span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="st">but his physical body can be killed.</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a><span class="st">"""</span></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>gandalf</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="44">
+<pre><code>'\nGandalf is a protagonist in J. R. R. Tolkien\'s novels The Hobbit and The Lord of the Rings. \nHe is a wizard, one of the Istari order, and the leader of the Fellowship of the Ring. Tolkien took the \nname "Gandalf" from the Old Norse "Catalogue of Dwarves" (Dvergatal) in the Völuspá.\n\nAs a wizard and the bearer of one of the Three Rings, Gandalf has great power, but works mostly by \nencouraging and persuading. He sets out as Gandalf the Grey, possessing great knowledge and \ntravelling continually. Gandalf is focused on the mission to counter the Dark Lord Sauron by \ndestroying the One Ring. He is associated with fire; his ring of power is Narya, the Ring of \nFire. As such, he delights in fireworks to entertain the hobbits of the Shire, while in great \nneed he uses fire as a weapon. As one of the Maiar, he is an immortal spirit from Valinor, \nbut his physical body can be killed.\n'</code></pre>
+</div>
+</div>
+<p>Well as is we have some work to do on the text to clean it up, as is often required. So lets do that. we need to strip special characters, quotes, and some other things.</p>
+<p>Steps: - use a regular expression (regex) to strip out punctuaton - convert everything to lower - remove all words less than 3 letters in length</p>
+<div class="cell" data-execution_count="45">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> re</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>gandalf_clean_list <span class="op">=</span> re.sub(<span class="vs">r'[^\w\s]|\n'</span>, <span class="st">''</span>, gandalf).lower().split(<span class="st">' '</span>)</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>gandalf_filtered <span class="op">=</span> [x <span class="cf">for</span> x <span class="kw">in</span> gandalf_clean_list <span class="cf">if</span> <span class="bu">len</span>(x) <span class="op">&gt;=</span> <span class="dv">3</span>]</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(gandalf_filtered)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>['gandalf', 'protagonist', 'tolkiens', 'novels', 'the', 'hobbit', 'and', 'the', 'lord', 'the', 'rings', 'wizard', 'one', 'the', 'istari', 'order', 'and', 'the', 'leader', 'the', 'fellowship', 'the', 'ring', 'tolkien', 'took', 'the', 'name', 'gandalf', 'from', 'the', 'old', 'norse', 'catalogue', 'dwarves', 'dvergatal', 'the', 'völuspáas', 'wizard', 'and', 'the', 'bearer', 'one', 'the', 'three', 'rings', 'gandalf', 'has', 'great', 'power', 'but', 'works', 'mostly', 'encouraging', 'and', 'persuading', 'sets', 'out', 'gandalf', 'the', 'grey', 'possessing', 'great', 'knowledge', 'and', 'travelling', 'continually', 'gandalf', 'focused', 'the', 'mission', 'counter', 'the', 'dark', 'lord', 'sauron', 'destroying', 'the', 'one', 'ring', 'associated', 'with', 'fire', 'his', 'ring', 'power', 'narya', 'the', 'ring', 'fire', 'such', 'delights', 'fireworks', 'entertain', 'the', 'hobbits', 'the', 'shire', 'while', 'great', 'need', 'uses', 'fire', 'weapon', 'one', 'the', 'maiar', 'immortal', 'spirit', 'from', 'valinor', 'but', 'his', 'physical', 'body', 'can', 'killed']</code></pre>
+</div>
+</div>
+<p>Ok, so we have this list of words. Now what? Well to get the word counts we have a few options: - Cheat and use <code>collections.Counter</code> - Use a for loop - Use a dictionary comprehension</p>
+<div class="cell" data-execution_count="46">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># method 1: collections.Counter</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> collections <span class="im">import</span> Counter</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>gandalf_wc_v1 <span class="op">=</span> Counter(gandalf_filtered)</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(gandalf_wc_v1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Counter({'the': 20, 'gandalf': 5, 'and': 5, 'one': 4, 'ring': 4, 'great': 3, 'fire': 3, 'lord': 2, 'rings': 2, 'wizard': 2, 'from': 2, 'power': 2, 'but': 2, 'his': 2, 'protagonist': 1, 'tolkiens': 1, 'novels': 1, 'hobbit': 1, 'istari': 1, 'order': 1, 'leader': 1, 'fellowship': 1, 'tolkien': 1, 'took': 1, 'name': 1, 'old': 1, 'norse': 1, 'catalogue': 1, 'dwarves': 1, 'dvergatal': 1, 'völuspáas': 1, 'bearer': 1, 'three': 1, 'has': 1, 'works': 1, 'mostly': 1, 'encouraging': 1, 'persuading': 1, 'sets': 1, 'out': 1, 'grey': 1, 'possessing': 1, 'knowledge': 1, 'travelling': 1, 'continually': 1, 'focused': 1, 'mission': 1, 'counter': 1, 'dark': 1, 'sauron': 1, 'destroying': 1, 'associated': 1, 'with': 1, 'narya': 1, 'such': 1, 'delights': 1, 'fireworks': 1, 'entertain': 1, 'hobbits': 1, 'shire': 1, 'while': 1, 'need': 1, 'uses': 1, 'weapon': 1, 'maiar': 1, 'immortal': 1, 'spirit': 1, 'valinor': 1, 'physical': 1, 'body': 1, 'can': 1, 'killed': 1})</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="47">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># method 2: for loop</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>gandalf_wc_v2 <span class="op">=</span> {}</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Count number of times each word comes up in list of words (in dictionary)</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> w <span class="kw">in</span> gandalf_filtered:</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> w <span class="kw">not</span> <span class="kw">in</span> gandalf_wc_v2.keys():</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>        gandalf_wc_v2[w] <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>        gandalf_wc_v2[w] <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(gandalf_wc_v2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>{'gandalf': 5, 'protagonist': 1, 'tolkiens': 1, 'novels': 1, 'the': 20, 'hobbit': 1, 'and': 5, 'lord': 2, 'rings': 2, 'wizard': 2, 'one': 4, 'istari': 1, 'order': 1, 'leader': 1, 'fellowship': 1, 'ring': 4, 'tolkien': 1, 'took': 1, 'name': 1, 'from': 2, 'old': 1, 'norse': 1, 'catalogue': 1, 'dwarves': 1, 'dvergatal': 1, 'völuspáas': 1, 'bearer': 1, 'three': 1, 'has': 1, 'great': 3, 'power': 2, 'but': 2, 'works': 1, 'mostly': 1, 'encouraging': 1, 'persuading': 1, 'sets': 1, 'out': 1, 'grey': 1, 'possessing': 1, 'knowledge': 1, 'travelling': 1, 'continually': 1, 'focused': 1, 'mission': 1, 'counter': 1, 'dark': 1, 'sauron': 1, 'destroying': 1, 'associated': 1, 'with': 1, 'fire': 3, 'his': 2, 'narya': 1, 'such': 1, 'delights': 1, 'fireworks': 1, 'entertain': 1, 'hobbits': 1, 'shire': 1, 'while': 1, 'need': 1, 'uses': 1, 'weapon': 1, 'maiar': 1, 'immortal': 1, 'spirit': 1, 'valinor': 1, 'physical': 1, 'body': 1, 'can': 1, 'killed': 1}</code></pre>
 </div>
 </div>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

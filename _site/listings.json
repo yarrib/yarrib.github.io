@@ -1,14 +1,12 @@
 [
   {
-    "listing": "/index.html",
-    "items": [
-      "/posts/post-12-29-2022/index.html"
-    ]
-  },
-  {
     "listing": "/projects.html",
     "items": [
       "/projects/proj/index.html"
     ]
+  },
+  {
+    "listing": "/index.html",
+    "items": []
   }
 ]
