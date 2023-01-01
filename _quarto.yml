@@ -2,11 +2,15 @@ project:
   type: website
 
 website:
-  title: "yarrib.github.io"
+  title: "Yarri Bryn"
   navbar:
+    search: true
     right:
       - about.qmd
-      - projects.qmd
+      - text: "Blog"
+        file: index.qmd
+      - text: "TIL"
+        file: til.qmd
       - icon: github
         href: https://github.com/
       - icon: twitter
@@ -15,6 +19,3 @@ format:
   html:
     theme: flatly
     css: styles.css
-
-
-

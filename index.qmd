@@ -1,6 +1,7 @@
 ---
-title: "yarrib.github.io"
+title: "Yarri's Blog Site"
 listing:
+  id: hero-heading  
   contents: posts
   sort: "date desc"
   type: default
@@ -11,4 +12,13 @@ page-layout: full
 title-block-banner: true
 ---
 
+some stuff up here
 
+---
+
+:::{#hero-heading}
+
+:::
+
+
+**sample footer text**
