@@ -6,7 +6,8 @@ website:
   navbar:
     search: true
     right:
-      - about.qmd
+      - text: "About"
+        file: about.qmd
       - text: "Blog"
         file: index.qmd
       - text: "TIL"

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Yarri Bryn">
-<meta name="dcterms.date" content="2022-12-31">
+<meta name="dcterms.date" content="2023-01-01">
 
 <title>Yarri Bryn - Why would I blog?</title>
 <style>
@@ -123,6 +123,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
 <link rel="stylesheet" href="../../styles.css">
@@ -146,7 +149,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="../../about.html">
- <span class="menu-text">About Yarri</span></a>
+ <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../index.html">
@@ -180,6 +183,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
                                 <div class="quarto-categories">
                 <div class="quarto-category">news</div>
                 <div class="quarto-category">general</div>
+                <div class="quarto-category">python</div>
+                <div class="quarto-category">comprehensions</div>
               </div>
                   </div>
   </div>
@@ -197,7 +202,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">December 31, 2022</p>
+        <p class="date">January 1, 2023</p>
       </div>
     </div>
     
@@ -217,18 +222,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <section id="why-would-i-blog" class="level1">
 <h1>Why would I blog?</h1>
+<blockquote class="blockquote">
+<p>Plus some bonus Python coding</p>
+</blockquote>
 <p><img src="ameen-fahmy-_gEKtyIbRSM-unsplash.jpg" title="" alt="" width="200px"></p>
-<p>Photo by <a href="https://unsplash.com/@ameenfahmy?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Ameen Fahmy</a> on <a href="https://unsplash.com/s/photos/idea?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>]</p>
-<p>The main reason I’m starting this blog is because I’ve been hesitant to do so. I prefer not to share too much information, so this is in a sense, a bit of a personal challenge. Also, Jeremy and Rachel over at <a href="https://fast.ai/">FastAI</a> are adament about blogging as a means of learning deep learning (or any topic for that matter).</p>
-<p>But I’m going to do things a little differently, in my own style, and will probably break a bunch of blogging rules because I don’t know any nor do I care to look them up. I’m going to be mixing thoughts and ideas with data science code snippets and projects. While I have some ideas for upcoming posts I also am likely to interject random tutorials which I would consider <em>things that are important but I didn’t find a good answer to</em>.</p>
-<p>The goal of this endeavor isn’t to make money, become influential, or anything like that. It is simply to get comfortable being uncomfortable in posting content and sharing thoughts, ideas and projects. The personal gain from this won’t come from visitors (if noone reads this, whatever!), but from committing to the habit and practicing it.</p>
-<p>So with that, lets go through a random code snippet that could be helpful.</p>
+<p>Photo by <a href="https://unsplash.com/@ameenfahmy?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Ameen Fahmy</a> on <a href="https://unsplash.com/s/photos/idea?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
+<p>The main reason I’m starting this blog is because I’ve been hesitant to do so. I prefer not to share too much information, so this is a sort of personal challenge. Also, Jeremy and Rachel over at <a href="https://fast.ai/">FastAI</a> are adament about blogging as a means of learning deep learning (or any topic for that matter). I agree with this perspective despite maintaining that the idea of blogging is better than actually doing it. I’ll keep tabs on this perspective over time.</p>
+<p>I’m going to do things a little differently, in my own style, and will probably break a bunch of blogging guidelines. I’m going to be mixing thoughts and ideas with data science code snippets and projects. While I have some ideas for upcoming posts I also am likely to interject random tutorials which I would consider <em>things that are useful to me</em>.</p>
+<p>The goal of this isn’t to make money or anything like that. It is simply to get comfortable being uncomfortable in posting content and sharing thoughts, ideas and projects. The personal gain I am seeking will be the product of committing to the habit and practicing it.</p>
+<p>So with that, lets go through a little python code that I find to be indespensible: <code>comprehensions</code>. I find myself interjecting list and dictionary comprehensions in all manner of code I write in Python. For instance, if I need to: filter some data based on a condition, manipulate dictionary keys and values, or update Pandas Dataframe column names. I’ll show those examples below, in contrast with some other methods.</p>
 <hr>
-<section id="comprehensions-in-python" class="level3">
-<h3 class="anchored" data-anchor-id="comprehensions-in-python">Comprehensions in Python</h3>
-<p><strong>Lists</strong></p>
+<section id="comprehensions" class="level3">
+<h3 class="anchored" data-anchor-id="comprehensions">Comprehensions</h3>
+<p><strong>Perform calculations on a list</strong></p>
 <p>First we need a list to work with, which is easy enough to create in python:</p>
-<div class="cell" data-execution_count="3">
+<div class="cell" data-execution_count="72">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>list_1 <span class="op">=</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">25</span>))</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(list_1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -236,7 +244,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 <p>Ok, so we have a list. Lets find the odd numbers using loops:</p>
-<div class="cell" data-execution_count="4">
+<div class="cell" data-execution_count="73">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>odd_nums <span class="op">=</span> []</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> item <span class="kw">in</span> list_1:</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> item<span class="op">%</span><span class="dv">2</span> <span class="op">!=</span> <span class="dv">0</span>:</span>
@@ -247,18 +255,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 <p>Well that works, but kind of long winded. A list comp can shorten it up for us:</p>
-<div class="cell" data-execution_count="5">
+<div class="cell" data-execution_count="74">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>odd_nums_lc <span class="op">=</span> [item <span class="cf">for</span> item <span class="kw">in</span> list_1 <span class="cf">if</span> item<span class="op">%</span><span class="dv">2</span> <span class="op">!=</span> <span class="dv">0</span>]</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(odd_nums_lc)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23]</code></pre>
 </div>
 </div>
-<p>So that is how list comprehensions are cool. The also works for nested lists, with Pandas DataFrames, and many other use cases.</p>
-<p>It should be noted however, that comprehensions can be harder to read, so extensively nested statements might be best being split up or incorporating some sort of loop or helper function.</p>
-<p><strong>Dicts</strong></p>
+<p>Similar methods also work for nested lists. It should be noted however, that comprehensions can be harder to read, so extensively nested statements might be best being split up or incorporating some sort of loop or helper function.</p>
+<p><strong>Getting some corpus - body of text - into a dictionary of word counts</strong></p>
 <p>Well we need a dict, so lets take some text and do a word count. We will use the first 2 paragraphs from the <a href="https://en.wikipedia.org/wiki/Gandalf_">Wikipedia entry for Gandalf</a></p>
-<div class="cell" data-execution_count="6">
+<div class="cell" data-execution_count="75">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>gandalf <span class="op">=</span> <span class="st">"""</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="st">Gandalf is a protagonist in J. R. R. Tolkien's novels The Hobbit and The Lord of the Rings. </span></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="st">He is a wizard, one of the Istari order, and the leader of the Fellowship of the Ring. Tolkien took the </span></span>
@@ -274,13 +281,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a><span class="st">"""</span></span>
 <span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>gandalf</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="6">
+<div class="cell-output cell-output-display" data-execution_count="75">
 <pre><code>'\nGandalf is a protagonist in J. R. R. Tolkien\'s novels The Hobbit and The Lord of the Rings. \nHe is a wizard, one of the Istari order, and the leader of the Fellowship of the Ring. Tolkien took the \nname "Gandalf" from the Old Norse "Catalogue of Dwarves" (Dvergatal) in the Völuspá.\n\nAs a wizard and the bearer of one of the Three Rings, Gandalf has great power, but works mostly by \nencouraging and persuading. He sets out as Gandalf the Grey, possessing great knowledge and \ntravelling continually. Gandalf is focused on the mission to counter the Dark Lord Sauron by \ndestroying the One Ring. He is associated with fire; his ring of power is Narya, the Ring of \nFire. As such, he delights in fireworks to entertain the hobbits of the Shire, while in great \nneed he uses fire as a weapon. As one of the Maiar, he is an immortal spirit from Valinor, \nbut his physical body can be killed.\n'</code></pre>
 </div>
 </div>
 <p>Well as is we have some work to do on the text to clean it up, as is often required. So lets do that. we need to strip special characters, quotes, and some other things.</p>
 <p>Steps: - use a regular expression (regex) to strip out punctuaton - convert everything to lower</p>
-<div class="cell" data-execution_count="15">
+<div class="cell" data-execution_count="76">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> re</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>gandalf_filtered <span class="op">=</span> re.sub(<span class="vs">r'[^\w\s]|\n'</span>, <span class="st">''</span>, gandalf).lower().split(<span class="st">' '</span>)</span>
@@ -291,7 +298,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <p>Ok, so we have this list of words. Now what? Well to get the word counts we have a few options: - Cheat and use <code>collections.Counter</code> - Use a for loop</p>
 <p>In either case we can get our word counts into a dict, but using a dictionary comprehension isn’t super efficient because we need to do some information retrieval from the dict. An alternative is using collections.defaultdict.</p>
-<div class="cell" data-execution_count="17">
+<div class="cell" data-execution_count="77">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># method 1: collections.Counter</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> collections <span class="im">import</span> Counter</span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -301,7 +308,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <pre><code>Counter({'the': 20, 'of': 11, 'is': 6, 'he': 6, 'gandalf': 5, 'and': 5, 'a': 4, 'in': 4, 'one': 4, 'ring': 4, 'as': 4, 'great': 3, 'fire': 3, 'r': 2, 'lord': 2, 'rings': 2, 'wizard': 2, 'from': 2, 'power': 2, 'but': 2, 'by': 2, 'to': 2, 'his': 2, 'protagonist': 1, 'j': 1, 'tolkiens': 1, 'novels': 1, 'hobbit': 1, 'istari': 1, 'order': 1, 'leader': 1, 'fellowship': 1, 'tolkien': 1, 'took': 1, 'name': 1, 'old': 1, 'norse': 1, 'catalogue': 1, 'dwarves': 1, 'dvergatal': 1, 'völuspáas': 1, 'bearer': 1, 'three': 1, 'has': 1, 'works': 1, 'mostly': 1, 'encouraging': 1, 'persuading': 1, 'sets': 1, 'out': 1, 'grey': 1, 'possessing': 1, 'knowledge': 1, 'travelling': 1, 'continually': 1, 'focused': 1, 'on': 1, 'mission': 1, 'counter': 1, 'dark': 1, 'sauron': 1, 'destroying': 1, 'associated': 1, 'with': 1, 'narya': 1, 'such': 1, 'delights': 1, 'fireworks': 1, 'entertain': 1, 'hobbits': 1, 'shire': 1, 'while': 1, 'need': 1, 'uses': 1, 'weapon': 1, 'maiar': 1, 'an': 1, 'immortal': 1, 'spirit': 1, 'valinor': 1, 'physical': 1, 'body': 1, 'can': 1, 'be': 1, 'killed': 1})</code></pre>
 </div>
 </div>
-<div class="cell" data-execution_count="18">
+<div class="cell" data-execution_count="78">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># method 2: for loop</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>gandalf_wc_v2 <span class="op">=</span> {}</span>
@@ -317,12 +324,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <pre><code>{'gandalf': 5, 'is': 6, 'a': 4, 'protagonist': 1, 'in': 4, 'j': 1, 'r': 2, 'tolkiens': 1, 'novels': 1, 'the': 20, 'hobbit': 1, 'and': 5, 'lord': 2, 'of': 11, 'rings': 2, 'he': 6, 'wizard': 2, 'one': 4, 'istari': 1, 'order': 1, 'leader': 1, 'fellowship': 1, 'ring': 4, 'tolkien': 1, 'took': 1, 'name': 1, 'from': 2, 'old': 1, 'norse': 1, 'catalogue': 1, 'dwarves': 1, 'dvergatal': 1, 'völuspáas': 1, 'bearer': 1, 'three': 1, 'has': 1, 'great': 3, 'power': 2, 'but': 2, 'works': 1, 'mostly': 1, 'by': 2, 'encouraging': 1, 'persuading': 1, 'sets': 1, 'out': 1, 'as': 4, 'grey': 1, 'possessing': 1, 'knowledge': 1, 'travelling': 1, 'continually': 1, 'focused': 1, 'on': 1, 'mission': 1, 'to': 2, 'counter': 1, 'dark': 1, 'sauron': 1, 'destroying': 1, 'associated': 1, 'with': 1, 'fire': 3, 'his': 2, 'narya': 1, 'such': 1, 'delights': 1, 'fireworks': 1, 'entertain': 1, 'hobbits': 1, 'shire': 1, 'while': 1, 'need': 1, 'uses': 1, 'weapon': 1, 'maiar': 1, 'an': 1, 'immortal': 1, 'spirit': 1, 'valinor': 1, 'physical': 1, 'body': 1, 'can': 1, 'be': 1, 'killed': 1}</code></pre>
 </div>
 </div>
+<p>I will use either method, but tend to prefer writing less code that I have to maintain. If there is a helper class or function that is in a stable release of a library, it makes life easier to use it.</p>
 <p>Because it doesn’t matter much which one we use for our example, we’ll just grab <code>gandalf_wc_v2</code> and get the top N values that exceed a certain word length. There are a ton of ways to do this, we will just use plain python.</p>
 <blockquote class="blockquote">
-<p>Note, we could have done this in one more line on our <code>collections.Counter</code> method call like this: <code>gandalf_wc_v1.most_common(n=5)</code></p>
+<p>We could have done this in one more line on our <code>collections.Counter</code> method call like this: <code>gandalf_wc_v1.most_common(n=5)</code></p>
 </blockquote>
 <p>But that is too easy, so let’s do it longhand:</p>
-<div class="cell" data-execution_count="46">
+<div class="cell" data-execution_count="79">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># key value pairs where key is &gt;= 3</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>gandalf_wl_geq_3 <span class="op">=</span> {k:v <span class="cf">for</span> k,v <span class="kw">in</span> gandalf_wc_v2.items() <span class="cf">if</span> <span class="bu">len</span>(k) <span class="op">&gt;=</span> <span class="dv">3</span>}</span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="co"># top N counts</span></span>
@@ -332,12 +340,233 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a><span class="co"># finally, a fun use of a dict comp:</span></span>
 <span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>{k:v <span class="cf">for</span> k,v <span class="kw">in</span> gandalf_wl_geq_3.items() <span class="cf">if</span> v <span class="kw">in</span> top_n}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="46">
+<div class="cell-output cell-output-display" data-execution_count="79">
 <pre><code>{'gandalf': 5, 'the': 20, 'and': 5, 'one': 4, 'ring': 4}</code></pre>
 </div>
 </div>
+<p><strong>Last but perhaps one of the best, comprehensions on Pandas Dataframe columns</strong></p>
+<p>lets create a dataframe with some sample data. To make it interesting I’ll use some comprehensions and other native python capabilities to create a dataset for this example, instead of using <code>Iris</code> or <code>Housing</code>.</p>
+<div class="cell" data-execution_count="80">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> itertools <span class="im">import</span> combinations</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>yrs <span class="op">=</span> <span class="bu">range</span>(<span class="dv">2018</span>,<span class="dv">2022</span>,<span class="dv">1</span>)</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>cities <span class="op">=</span> <span class="st">'Bozeman, MT'</span>, <span class="st">'Spokane, WA'</span>, <span class="st">'Bangor, ME'</span>, <span class="st">'White Plains, NY'</span>, <span class="st">'Sedona, AZ'</span></span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>cat1 <span class="op">=</span> [<span class="st">'wizard'</span>, <span class="st">'ranger'</span>, <span class="st">'elf'</span>, <span class="st">'hutt'</span>, <span class="st">'orc'</span>, <span class="st">'nazgul'</span>, <span class="st">'numenorean'</span>, <span class="st">'deciever'</span>]</span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>colnames <span class="op">=</span> <span class="st">'year'</span>,<span class="st">'city'</span>,<span class="st">'role'</span>,<span class="st">'points'</span></span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>ds <span class="op">=</span> [[y,c,k, np.random.randint(<span class="op">-</span><span class="dv">10</span>, <span class="dv">10</span>)] <span class="cf">for</span> k <span class="kw">in</span> cat1 <span class="cf">for</span> c <span class="kw">in</span> cities <span class="cf">for</span> y <span class="kw">in</span> yrs]</span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame(ds, columns<span class="op">=</span>colnames)</span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a>display(df.head(<span class="dv">3</span>), df.shape)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>year</th>
+      <th>city</th>
+      <th>role</th>
+      <th>points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2018</td>
+      <td>Bozeman, MT</td>
+      <td>wizard</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2019</td>
+      <td>Bozeman, MT</td>
+      <td>wizard</td>
+      <td>-9</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2020</td>
+      <td>Bozeman, MT</td>
+      <td>wizard</td>
+      <td>-8</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<pre><code>(160, 4)</code></pre>
+</div>
+</div>
+<p>So we have some meaningless data. Now lets group by to get a multiindex that we want to manipulate, the whole point of this little exercise.</p>
+<div class="cell" data-execution_count="81">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>dfg <span class="op">=</span> df.groupby(by<span class="op">=</span>[<span class="st">'city'</span>, <span class="st">'role'</span>]).agg({<span class="st">'points'</span>: [<span class="st">'mean'</span>,<span class="st">'sum'</span>, np.std]}).reset_index()</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>dfg.head(<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="81">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>city</th>
+      <th>role</th>
+      <th colspan="3" halign="left">points</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>mean</th>
+      <th>sum</th>
+      <th>std</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Bangor, ME</td>
+      <td>deciever</td>
+      <td>4.50</td>
+      <td>18</td>
+      <td>3.872983</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Bangor, ME</td>
+      <td>elf</td>
+      <td>0.75</td>
+      <td>3</td>
+      <td>7.889867</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Bangor, ME</td>
+      <td>hutt</td>
+      <td>-1.25</td>
+      <td>-5</td>
+      <td>5.560276</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<p>So this isn’t super useful for anything. Now normally some dataset for machine learning or what not will have a much broader set of columns (a.k.a. features), but the concept is pretty much the same. Just remember to work on manageable chunks and don’t get intimidated by a long chain of transformations.</p>
+<div class="cell" data-execution_count="82">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Initial column list: </span><span class="sc">{</span>dfg<span class="sc">.</span>columns<span class="sc">}</span><span class="ss">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Initial column list: MultiIndex([(  'city',     ''),
+            (  'role',     ''),
+            ('points', 'mean'),
+            ('points',  'sum'),
+            ('points',  'std')],
+           )</code></pre>
+</div>
+</div>
+<p>So first I’ll demonstrate updating this with a list comprehension. This is a bit more complex of a list comprehension in that in incorporates a conditional <code>''.join</code> in the output. Basically what is happening is we are looking at each tuple in the multiindex, and if the last item is an empty string, we underscore join all but the lst element, otherwise we join the whole thing.</p>
+<div class="cell" data-execution_count="83">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>dfg_copy1 <span class="op">=</span> dfg.copy()</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>dfg_copy1.columns <span class="op">=</span> [<span class="st">'_'</span>.join(<span class="bu">list</span>(x) <span class="cf">if</span> <span class="bu">len</span>(x[<span class="op">-</span><span class="dv">1</span>]) <span class="op">&gt;</span> <span class="dv">0</span> <span class="cf">else</span> x[:<span class="op">-</span><span class="dv">1</span>]) <span class="cf">for</span> x <span class="kw">in</span> dfg_copy1.columns]</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>dfg_copy1.head(<span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="83">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>city</th>
+      <th>role</th>
+      <th>points_mean</th>
+      <th>points_sum</th>
+      <th>points_std</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Bangor, ME</td>
+      <td>deciever</td>
+      <td>4.50</td>
+      <td>18</td>
+      <td>3.872983</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Bangor, ME</td>
+      <td>elf</td>
+      <td>0.75</td>
+      <td>3</td>
+      <td>7.889867</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<p>There is another way, however, that is pretty clever. It is more of a functional style and I’m fairly certain I’ve seen it used in the <a href="https://fast.ai">Fast AI</a> course or notebooks in addition to numerous tutorials on the internet. We will be using the <code>map</code> function over our columns.</p>
+<div class="cell" data-execution_count="84">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>dfg_copy2 <span class="op">=</span> dfg.copy()</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>dfg_copy2.columns <span class="op">=</span> dfg_copy2.columns.<span class="bu">map</span>(<span class="kw">lambda</span> x : <span class="st">'_'</span>.join(x) <span class="cf">if</span> x[<span class="op">-</span><span class="dv">1</span>] <span class="op">==</span> <span class="st">'_'</span> <span class="cf">else</span> x[<span class="dv">0</span>])</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>dfg_copy2.head(<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="84">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>city</th>
+      <th>role</th>
+      <th>points</th>
+      <th>points</th>
+      <th>points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Bangor, ME</td>
+      <td>deciever</td>
+      <td>4.50</td>
+      <td>18</td>
+      <td>3.872983</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Bangor, ME</td>
+      <td>elf</td>
+      <td>0.75</td>
+      <td>3</td>
+      <td>7.889867</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Bangor, ME</td>
+      <td>hutt</td>
+      <td>-1.25</td>
+      <td>-5</td>
+      <td>5.560276</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<p>While this is really quick and easy if there isn’t any weird conditions (e.g.&nbsp;you can just use <code>{dataframe_name}.columns.map('_'.join)</code>), above we only have the multiindex on some columns, so handling the <code>city</code> and <code>role</code> columns differently is something useful to do for readbility. So there you have it, a bonus method of <code>map</code> + <code>lambda</code> to achieve the same goal as a list comprehension.</p>
 <hr>
-<p>Well for now that is plenty of information. As stated previously I’m striving to be conscise and useful, and not just for those with an established vocabulary in data science or programming in general. Thanks for reading!</p>
+<p>Well for now that is plenty of information. Hopefully this helps a future task of yours regardless of your proficiency in technical terminonology.</p>
 
 
 </section>

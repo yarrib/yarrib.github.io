@@ -1,5 +1,5 @@
 ---
-title: "Yarri's Blog Site"
+title: "Greetings!"
 listing:
   id: hero-heading  
   contents: posts
@@ -12,7 +12,10 @@ page-layout: full
 title-block-banner: true
 ---
 
-some stuff up here
+Welcome to my site. This is where I'll be sharing things I've learned, things I am learning
+, and content about topics that interest me. No ads or any junk like that. 
+The nav bar has the important links, and below are my most recent posts.
+
 
 ---
 
@@ -21,4 +24,3 @@ some stuff up here
 :::
 
 
-**sample footer text**

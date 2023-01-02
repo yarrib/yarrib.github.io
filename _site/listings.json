@@ -1,20 +1,14 @@
 [
   {
-    "listing": "/projects.html",
+    "listing": "/til.html",
     "items": [
-      "/projects/proj/index.html"
+      "/til/demo.html"
     ]
   },
   {
     "listing": "/index.html",
     "items": [
       "/posts/post-01-01-2023/index.html"
-    ]
-  },
-  {
-    "listing": "/til.html",
-    "items": [
-      "/til/demo.html"
     ]
   }
 ]
