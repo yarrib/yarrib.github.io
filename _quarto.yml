@@ -3,20 +3,32 @@ project:
 
 website:
   title: "Yarri Bryn"
+  description: "Personal Blog for Yarri Bryn"
+  site-url: "https://yarrib.github.io/"
   navbar:
     search: true
     right:
       - text: "About"
         file: about.qmd
       - text: "Blog"
-        file: index.qmd
+        file: blog.qmd
       - text: "TIL"
         file: til.qmd
       - icon: github
         href: https://github.com/
       - icon: twitter
         href: https://twitter.com
+      - icon: kaggle.svg
+        href: https://kaggle.com
+
+  comments: 
+    utterances:
+      repo: https://github.com/yarrib/yarrib.github.io
+
+
 format:
   html:
-    theme: flatly
+    theme:
+      light: flatly
+      dark: darkly
     css: styles.css

@@ -1,0 +1,24 @@
+---
+title: "Greetings!"
+listing:
+  id: hero-heading  
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: true
+---
+
+Below are my most recent blog posts.
+
+
+---
+
+:::{#hero-heading}
+
+:::
+
+

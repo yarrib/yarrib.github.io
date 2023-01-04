@@ -8,9 +8,9 @@
 <title>Yarri Bryn</title>
 <link>https://yarrib.github.io/til.html</link>
 <atom:link href="https://yarrib.github.io/til.xml" rel="self" type="application/rss+xml"/>
-<description></description>
+<description>Personal Blog for Yarri Bryn</description>
 <generator>quarto-1.2.280</generator>
-<lastBuildDate>Sun, 01 Jan 2023 22:27:26 GMT</lastBuildDate>
+<lastBuildDate>Wed, 04 Jan 2023 03:45:20 GMT</lastBuildDate>
 <item>
   <title>matplotlib demo</title>
   <link>https://yarrib.github.io/til/demo.html</link>
@@ -50,7 +50,7 @@
 
  ]]></description>
   <guid>https://yarrib.github.io/til/demo.html</guid>
-  <pubDate>Sun, 01 Jan 2023 22:27:26 GMT</pubDate>
+  <pubDate>Wed, 04 Jan 2023 03:45:20 GMT</pubDate>
 </item>
 </channel>
 </rss>

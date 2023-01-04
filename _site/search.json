@@ -16,16 +16,16 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Greetings!",
+    "title": "Yarri Bryn",
     "section": "",
-    "text": "Welcome to my site. This is where I’ll be sharing things I’ve learned, things I am learning , and content about topics that interest me. No ads or any junk like that. The nav bar has the important links, and below are my most recent posts.\n\n\n\n\n\n\n\nWhy would I blog?\n\n\n\n\n\n\n\nnews\n\n\ngeneral\n\n\npython\n\n\ncomprehensions\n\n\n\n\n\n\n\n\n\n\n\nJan 1, 2023\n\n\nYarri Bryn\n\n\n\n\n\n\nNo matching items"
+    "text": "Hi, I’m Yarri\nI am a Data Scientist at Wipfli LLP. This blog is for sharing my thoughts on various topics in data science, helpful tips, and things I’ve learned."
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About Yarri",
     "section": "",
-    "text": "LinkedIn\n  \n  \n    \n     Github\n  \n\n  \n  \nYarri Bryn is a Data Scientist at Wipfli LLP. Yarri is married with one kiddo, Mateo, whom he hopes will grow up to be curious. He also likes golf, spending time outdoors, and various athletic and non-athletic hobbies.\n\n\nUniversity of Wisconsin - Eau Claire | Eau Claire, WI M.S. in Data Science | Sept 2019 - May 2022\nUniversity of Northern Iowa | Cedar Falls, Iowa B.A. in Marketing Management | Sept 2009 - May 2013\n\n\n\nWipfli LLP | Data Scientist / Data Engineer | January 2022-Present\nMinneapolis Park and Recreation Board | Parking & Business Systems Professional\nSelf-Employed | Professional Golfer (limited success) | September 2017 - October 2017"
+    "text": "Yarri Bryn is a Data Scientist at Wipfli LLP. Yarri is married with one kiddo, Mateo, whom he hopes will grow up to be curious. He also likes golf, spending time outdoors, and various athletic and non-athletic hobbies.\n\n\nUniversity of Wisconsin - Eau Claire | Eau Claire, WI M.S. in Data Science | Sept 2019 - May 2022\nUniversity of Northern Iowa | Cedar Falls, Iowa B.A. in Marketing Management | Sept 2009 - May 2013\n\n\n\nWipfli LLP | Data Scientist / Data Engineer | January 2022-Present\nMinneapolis Park and Recreation Board | Parking & Business Systems Professional\nSelf-Employed | Professional Golfer (limited success) | September 2017 - October 2017\n\n\n  \n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Github"
   },
   {
     "objectID": "about.html#certifications",
@@ -47,5 +47,12 @@
     "title": "matplotlib demo",
     "section": "",
     "text": "For a demonstration of a line plot on a polar axis, see Figure 1.\n\n\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\n\n\n\nFigure 1: A line plot on a polar axis"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Greetings!",
+    "section": "",
+    "text": "Below are my most recent blog posts.\n\n\n\n\n\n\n\nWhy would I blog?\n\n\n\n\n\n\n\nnews\n\n\ngeneral\n\n\npython\n\n\ncomprehensions\n\n\n\n\n\n\n\n\n\n\n\nJan 1, 2023\n\n\nYarri Bryn\n\n\n\n\n\n\nNo matching items"
   }
 ]

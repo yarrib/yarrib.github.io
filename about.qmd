@@ -3,7 +3,7 @@ title: "About Yarri"
 image: profile.jpg
 about:
   id: hero-heading
-  template: trestles
+  template: broadside
   links:
     - icon: linkedin
       text: LinkedIn
@@ -11,7 +11,7 @@ about:
     - icon: github
       text: Github
       href: https://github.com/yarrib
-
+page-layout: full
 ---
 
 :::{#hero-heading}

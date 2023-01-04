@@ -1,26 +1,18 @@
 ---
-title: "Greetings!"
-listing:
-  id: hero-heading  
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: false
-  filter-ui: false
 page-layout: full
-title-block-banner: true
 ---
 
-Welcome to my site. This is where I'll be sharing things I've learned, things I am learning
-, and content about topics that interest me. No ads or any junk like that. 
-The nav bar has the important links, and below are my most recent posts.
+::: {.grid}
 
+::: {.g-col-12 .g-col-md-6}
+![](profile.jpg)
+:::
 
----
-
-:::{#hero-heading}
-
+::: {.g-col-12 .g-col-md-6}
+# Hi, I'm Yarri
+I am a Data Scientist at Wipfli LLP. This blog is for sharing my thoughts on various topics in data science,
+helpful tips, and things I've learned.
 :::
 
 
+:::
