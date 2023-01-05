@@ -10,7 +10,7 @@
 <atom:link href="https://yarrib.github.io/til.xml" rel="self" type="application/rss+xml"/>
 <description>Personal Blog for Yarri Bryn</description>
 <generator>quarto-1.2.280</generator>
-<lastBuildDate>Wed, 04 Jan 2023 03:45:20 GMT</lastBuildDate>
+<lastBuildDate>Thu, 05 Jan 2023 03:32:13 GMT</lastBuildDate>
 <item>
   <title>matplotlib demo</title>
   <link>https://yarrib.github.io/til/demo.html</link>
@@ -50,7 +50,7 @@
 
  ]]></description>
   <guid>https://yarrib.github.io/til/demo.html</guid>
-  <pubDate>Wed, 04 Jan 2023 03:45:20 GMT</pubDate>
+  <pubDate>Thu, 05 Jan 2023 03:32:13 GMT</pubDate>
 </item>
 </channel>
 </rss>

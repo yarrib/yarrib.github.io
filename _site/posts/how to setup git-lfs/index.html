@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Yarri Bryn">
+<meta name="dcterms.date" content="2022-01-04">
 
-<title>Yarri Bryn - Greetings!</title>
+<title>Yarri Bryn - How to Setup Git-Lfs in Azure Machine Learning</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +25,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -62,49 +62,19 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-hero-heading .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-hero-heading'] = new List('listing-hero-heading', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Yarri Bryn</span>
     </a>
   </div>
@@ -114,15 +84,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html">
+    <a class="nav-link" href="../../about.html">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page">
+    <a class="nav-link" href="../../blog.html">
  <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./til.html">
+    <a class="nav-link" href="../../til.html">
  <span class="menu-text">TIL</span></a>
   </li>  
   <li class="nav-item compact">
@@ -152,158 +122,55 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Greetings!</h1>
-                      </div>
+    <div class="quarto-title column-body">
+      <h1 class="title">How to Setup Git-Lfs in Azure Machine Learning</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">git</div>
+              </div>
+                  </div>
   </div>
     
   
   <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Yarri Bryn </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">January 4, 2022</p>
+      </div>
+    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="about">about <span class="quarto-category-count">(1)</span></div><div class="category" data-category="azure machine learning">azure machine learning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="comprehensions">comprehensions <span class="quarto-category-count">(1)</span></div><div class="category" data-category="deep learning">deep learning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="fastai">fastai <span class="quarto-category-count">(1)</span></div><div class="category" data-category="general">general <span class="quarto-category-count">(1)</span></div><div class="category" data-category="git">git <span class="quarto-category-count">(1)</span></div><div class="category" data-category="news">news <span class="quarto-category-count">(1)</span></div><div class="category" data-category="python">python <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
-<p>Below are my most recent blog posts.</p>
-<hr>
-<div id="listing-hero-heading" class="quarto-listing quarto-listing-container-default">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="about,fastai,deep learning" data-listing-date-sort="1672898400000" data-listing-file-modified-sort="1672889519102" data-listing-reading-time-sort="3.58">
-<div class="body">
-<a href="./posts/dl-basics-with-fastai/index.html">
-<h3 class="no-anchor listing-title">
-Fastai Course v2022, Lessons 1 and 2
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('about'); return false;">
-about
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('fastai'); return false;">
-fastai
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('deep learning'); return false;">
-deep learning
-</div>
-</div>
-<a href="./posts/dl-basics-with-fastai/index.html">
-<div class="listing-description">
-Recently I started the Fast.ai course Practical Deep Learning For Coders. Now this isn’t my first time around but I feel less intimidated this time. I made it though all of the video lessons for the 2020 version of the course and had a lot of…
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/dl-basics-with-fastai/index.html">
-<div class="listing-date">
-Jan 5, 2023
-</div>
-<div class="listing-author">
-Yarri Bryn
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="git,azure machine learning" data-listing-date-sort="1672812000000" data-listing-file-modified-sort="1672889504003" data-listing-reading-time-sort="1.11">
-<div class="body">
-<a href="./posts/how-to-use-git-lfs-in-azureml/index.html">
-<h3 class="no-anchor listing-title">
-How to Setup Git-Lfs in Azure Machine Learning
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('git'); return false;">
-git
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('azure machine learning'); return false;">
-azure machine learning
-</div>
-</div>
-<a href="./posts/how-to-use-git-lfs-in-azureml/index.html">
-<div class="listing-description">
-Today I encountered an interesting challenge while working in Azure Machine Learning at work. First I’ll provide a little overview of Azure ML as a tool, and explain where <code>git…</code>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/how-to-use-git-lfs-in-azureml/index.html">
-<div class="listing-date">
-Jan 4, 2023
-</div>
-<div class="listing-author">
-Yarri Bryn
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="news,general,python,comprehensions" data-listing-date-sort="1672552800000" data-listing-file-modified-sort="1672802951995" data-listing-reading-time-sort="4.685">
-<div class="body">
-<a href="./posts/my-foray-into-blogging/index.html">
-<h3 class="no-anchor listing-title">
-Why would I blog?
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('news'); return false;">
-news
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('general'); return false;">
-general
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('python'); return false;">
-python
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('comprehensions'); return false;">
-comprehensions
-</div>
-</div>
-<a href="./posts/my-foray-into-blogging/index.html">
-<div class="listing-description">
-Plus some bonus Python coding
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/my-foray-into-blogging/index.html">
-<div class="listing-date">
-Jan 1, 2023
-</div>
-<div class="listing-author">
-Yarri Bryn
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
+<p>Today I encountered an interesting challenge while working in Azure Machine Learning at work. First I’ll provide a little overview of Azure ML as a tool, and explain where <code>git-lfs</code> comes into play.</p>
+<section id="azure-ml-a-quick-overview" class="level2">
+<h2 class="anchored" data-anchor-id="azure-ml-a-quick-overview">Azure ML: A Quick overview</h2>
+</section>
+<section id="git-lfs-enabling-practical-data-science" class="level2">
+<h2 class="anchored" data-anchor-id="git-lfs-enabling-practical-data-science">Git-Lfs: Enabling practical data science</h2>
+<p>My challenge today was doing some professional development, building a sample model and deploying a <a href="https://www.gradio.app">Gradio</a> to <a href="https://huggingface.co/docs/hub/spaces">HuggingFace Spaces</a></p>
 
 
-
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

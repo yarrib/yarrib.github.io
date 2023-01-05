@@ -8,7 +8,9 @@
   {
     "listing": "/blog.html",
     "items": [
-      "/posts/post-01-01-2023/index.html"
+      "/posts/dl-basics-with-fastai/index.html",
+      "/posts/how-to-use-git-lfs-in-azureml/index.html",
+      "/posts/my-foray-into-blogging/index.html"
     ]
   }
 ]

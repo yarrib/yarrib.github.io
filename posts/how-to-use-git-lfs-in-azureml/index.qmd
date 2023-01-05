@@ -1,0 +1,43 @@
+---
+title: "How to Setup Git-Lfs in Azure Machine Learning"
+author: "Yarri Bryn"
+date: "2023-01-04"
+categories: [git, azure machine learning]
+
+---
+
+# <font color="purple">**--------PUBLIC DRAFT--------**</font>
+
+Today I encountered an interesting challenge while working in Azure Machine Learning at work.
+First I'll provide a little overview of Azure ML as a tool, and explain where `git-lfs` comes
+into play.
+
+
+## Azure ML: A Quick overview
+
+
+
+## Git-Lfs: Enabling practical data science
+
+My challenge today was doing some professional development, building a sample model and 
+deploying a [Gradio](https://www.gradio.app) to 
+[HuggingFace Spaces (HF)](https://huggingface.co/docs/hub/spaces). Well as it turns out the `model.pkl`
+file that I created in training my simple model doesn't play nicely with HF.
+
+### Why is this?
+
+Simply put, large files and large binary files like .pkl files are both too large and not
+the intended type of file to be saved into typical distributed version control like git. Thankfully,
+the brilliant folks who build and maintain git stuff created [git-lfs](https://git-lfs.com),
+a.k.a. *Git Large File Storage*. This allows the references to the big files to be pushed into a repo
+while separating the big files themselves into some other place. I'm not going to go into the details
+of how it works because (1) I only have a topical knowledge, and (2) that isn't the point.
+
+Lets see how to enable it in AzureML:
+
+1) Start a compute in AzureML
+2) Open a terminal
+3) install git lfs from source using sudo apt-get (if apt/debian, else yum)
+4) instantiate any repos that will use lfs
+5) add and commit files as usual
+6) observe how lfs files are pushed
