@@ -1,3 +1,8 @@
+---
+title: Creating and Deploying a Model to HuggingFace Spaces with Gradio, Fastai, and GitHub Actions
+date: "2023-01-05"
+draft:true
+---
 # Creating and Deploying a Model to HuggingFace Spaces with Gradio, Fastai, and GitHub Actions
 
 To deploy a simple app to HuggingFace spaces with Gradio we can do this directly with huggingface repos. But wouldn't it be nice to save the project to your github? Heres how
