@@ -22,69 +22,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { color: #008000; } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { color: #008000; font-weight: bold; } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
@@ -226,67 +163,52 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 
-<section id="public-draft" class="level1">
-<h1><font color="purple"><strong>——–PUBLIC DRAFT——–</strong></font></h1>
-</section>
-<section id="section" class="level1">
-<h1></h1>
-<p>Recently I started the Fast.ai course <a href="https://course.fast.ai">Practical Deep Learning For Coders</a>. Now this isn’t my first time around but I feel less intimidated this time. I made it though all of the video lessons for the 2020 version of the course and had a lot of takeaways. I was excited about what is possible in deep learning yet equally intimidated by the sheer scope of the field. To this day I am a believer in impostor syndrome; that is, I am living it on daily basis. Though I feel like I don’t know anything I am making tremendous progress in areas directly and indirectly related to deep learning.</p>
-<p>I previously listened to the lessons and attempted some of the coding exercises, chapter questions, and even bought the book so I posessed a paper copy. I found it hard to go beyond just running the provided notebooks. My barrier, and this is probably more common than my intuition would indicate, is that I overanalyze and come up with a list of things to learn. This runs contrary to the Fast.ai principle of top down learning. For me there is a fear of failure, a fear of doing something thats already been done and is trivial, and an inkling that I’ll never learn it or break into the field.</p>
-<p>This of course is insane, because everyone starts from somewhere and very few people go from zero to hero in a few weeks. For nearly everyone across all domains, consistent practice is the recipe for success. Some people find success more quickly, others it takes longer. Persistence is key.</p>
-<p>As noted in my previous - and first - blog post, I’ve resisted starting a blog even though it is an excellent way to ingrain knowledge and also share what one has learned in a unique perspective. So as I begin this journey I hope that I’m able to share perspectives that make deep learning more approachable and explain it in common sense terms. Lets get started!</p>
+<section id="getting-started-with-fastai-a-no-code-overview" class="level1">
+<h1>Getting started with Fastai: A no-code overview</h1>
+<p>Recently I started the Fast.ai course <a href="https://course.fast.ai">Practical Deep Learning For Coders</a>. Now this isn’t my first time around but I feel less intimidated this time. I watched all the video lessons for the 2020 version of the course, gaining some high level knowledge. I bought the book as well, which is mentioned on the course site lined above. I was excited about what is possible in deep learning yet equally intimidated by the sheer scope of the field.</p>
+<p>To this day I am a believer in impostor syndrome; that is, I am living it on daily basis. Though I feel like I don’t know anything I am making tremendous progress in areas directly and indirectly related to deep learning.</p>
+<p>For the 2020 course I found it hard to go beyond just running the provided notebooks. The barrier for me - and I’d wager for many others - is getting overwhelmed and making a list of things to learn instead of just doing it. This runs contrary to the Fast.ai principle of top down learning. For me there is a fear of failure in learning and/or establishing a career in data sience.</p>
+<p>Yet everyone starts from somewhere and I don’t believe its possible to go from zero to hero in a few weeks. Consistent effort is the recipe for success. Some people find success more quickly, others it takes longer. Persistence is key.</p>
+<p>As noted in my first blog post, I’ve resisted starting a blog even though it is an excellent way to share and learn. As I learn I hope to share perspectives that are suited towards people like me; those that are always learning and like to relate to things common sense terms. Lets get started!</p>
 <section id="the-basics" class="level2">
 <h2 class="anchored" data-anchor-id="the-basics">The basics</h2>
 <p><strong>What is deep learning and what is it all about?</strong>*</p>
 <ul>
 <li>In normal human speak, deep learning is an evolution and subset of machine learning.</li>
 <li>Deep Learning (DL) is centered around something called neural networks.</li>
-<li>Neural nets are a type of machine learning model architecture, which in theory permit a universally flexible function to approximate just about anything given some input data that represents what you wnat to do.</li>
+<li>Neural nets are a type of machine learning model architecture, which in theory permit a universally flexible function to approximate any relationship of observations to outcomes.</li>
 <li>A machine learning model is a general way to solve a problem. For example, given some data and some label that it belongs to, e.g.&nbsp;demographic data (features) that maps to what your income might be (target), we try to create a model which “learns” how X (features) maps to y (target).</li>
-<li>A model architecture is the math behind this process. Neural nets are flexible because they learn latent relationships by doing a bunch of linear algebra and calculus in the background, in an authomated, iterative fashion.</li>
-<li>Short version:
-<ul>
-<li>We use a model architecture, pass information into it, and get predictions on this data. This fitting process is something we iterate over until we have a satisfactory result that allows us to make some predictions or inferences about a subset of the world. There are lots of domains and ways to do this, and a rapidly expanding domain of study under the Data Science umbrella.</li>
-</ul></li>
-<li>Do you need to know the details beyond this? Eventually, but it isn’t critical to accomplish some tasks. Worry about it later!</li>
+<li>A model architecture is the math behind this process. Neural nets are flexible because they use clever math to create and learn values of hidden parameters that allow us to go from X -&gt; y.</li>
+<li>Do you need to know the details beyond this? Yeah, you do. But not yet. Don’t worry about it!</li>
 </ul>
 <p><strong>Can deep learning be easy?</strong></p>
 <ul>
 <li>Jeremy Howard says it can be learned by doing, and some things that were beyond difficult a decade ago are trivial today.</li>
-<li>It is not easy, however, nor is it quick to learn. Add a little bit of info on a regular basis and you will accumilate knowledge.</li>
-<li>Practice makes permanent.</li>
+<li>It is not easy, however, nor is it quick to learn. Practice on a regular basis and you will accumilate knowledge.</li>
 </ul>
 <p><strong>What is a simple way to train a model?</strong></p>
+<p>First of all, do yourself a favor and don’t try to write things from scratch. Use Fastai or another library which can abstract the details and boilerplate code. Second, create a model! This will be a computer vision model that classifies species of houseplants. Pick some topic that interests you and solve a trivial problem.</p>
 <ul>
-<li>Open source product plug: Fastai is great for deep learning.</li>
-<li>Lets train a model thats slightly more exciting than the two-class classifier in Lesson 1 and 2 of the Fast.ai course.</li>
+<li>Here is the repo behind this app, hosted on huggingface spaces <a href="https://huggingface.co/spaces/yarrib/houseplants/tree/main">here</a></li>
 <li>Steps:
 <ul>
-<li>get data</li>
+<li>get data: web scrape from duck duck go</li>
 <li>preprocess data</li>
 <li>train model</li>
 <li>evaulate result</li>
-<li>publish model to Huggingface Spaces</li>
+<li>create a Gradio app: you don’t need to do much!</li>
+<li>publish model to Huggingface Spaces: use git or even the file upload if git sounds too hard right now</li>
 </ul></li>
 </ul>
-<div class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#imports</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> fastai.vision.<span class="bu">all</span> <span class="im">import</span> <span class="op">*</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># get data</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># setup dataloaders</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># train model</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co"># save model</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co"># get predictions</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
+</section>
+<section id="the-app" class="level2">
+<h2 class="anchored" data-anchor-id="the-app">The app</h2>
+<iframe src="https://yarrib-houseplants.hf.space" frameborder="0" width="100%" height="750px">
+</iframe>
+</section>
+<section id="parting-thoughts" class="level2">
+<h2 class="anchored" data-anchor-id="parting-thoughts">Parting thoughts</h2>
+<p>Creating a project like the above is relatively straightfoward, but I totally understand how it can seem hard at first. Getting an error or trying to figure out how something works can be a tedious process, but you can do it. It is challenging to learn, and easy to get discouraged. But everyone starts somewhere, and you learn by doing. Stay positive and patient!</p>
 
 
 </section>
