@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2023-01-05">
 
-<title>Yarri Bryn</title>
+<title>Yarri Bryn - Creating and Deploying a Model to HuggingFace Spaces with Gradio, Fastai, and GitHub Actions</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +24,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -62,17 +63,17 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Yarri Bryn</span>
     </a>
   </div>
@@ -82,30 +83,31 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html">
+    <a class="nav-link" href="../../about.html">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html">
+    <a class="nav-link" href="../../blog.html">
  <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./howto.html">
- <span class="menu-text">How To’s</span></a>
+    <a class="nav-link" href="../../til.html">
+ <span class="menu-text">TIL</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/yarrib"><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/"><i class="bi bi-github" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/yarribryn"><i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://twitter.com"><i class="bi bi-twitter" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="https://kaggle.com">
- <span class="menu-text">kaggle</span></a>
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://kaggle.com"><i class="bi bi-kaggle.svg" role="img">
+</i> 
+ <span class="menu-text"></span></a>
   </li>  
 </ul>
               <div class="quarto-toggle-container">
@@ -117,30 +119,107 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Creating and Deploying a Model to HuggingFace Spaces with Gradio, Fastai, and GitHub Actions</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">January 5, 2023</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
-<div class="grid">
-<div class="g-col-12 g-col-md-4">
-<p><img src="profile.jpg" width="100%" height="auto"></p>
-</div>
-<section id="hi-im-yarri" class="level1 g-col-12 g-col-md-8">
-<h1>Hi, I’m Yarri,</h1>
+
+<section id="creating-and-deploying-a-model-to-huggingface-spaces-with-gradio-fastai-and-github-actions" class="level1">
+<h1>Creating and Deploying a Model to HuggingFace Spaces with Gradio, Fastai, and GitHub Actions</h1>
+<p>To deploy a simple app to HuggingFace spaces with Gradio we can do this directly with huggingface repos. But wouldn’t it be nice to save the project to your github? Heres how</p>
+<section id="pre-work-ssh-key-and-git-lfs" class="level2">
+<h2 class="anchored" data-anchor-id="pre-work-ssh-key-and-git-lfs">pre work: ssh key and git lfs</h2>
+<ul>
+<li><em>authenticate to github with a personal access token or ssh - will show ssh</em>
+<ul>
+<li><p><a href="https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls">github getting started with remotes</a></p></li>
+<li><p>check if you have an existing ssh key: <code>ls -al ~/.ssh       # Lists the files in your .ssh directory, if they exist</code></p></li>
+<li><p>then, create a new key <code>ssh-keygen -t ed25519 -C "your_email@example.com"</code></p></li>
+<li><p>name your key to be specific to github, if desired ``` # you can use the default but in the event you are wokring with multiple keys this is recommended:</p>
 <blockquote class="blockquote">
-<p>The cute one is Mateo - aka Mr.&nbsp;Dude - the toddler who is a bundle of chaos at present.</p>
+<p>Generating public/private ed25519 key pair. Enter file in which to save the key (~/.ssh/id_rsa): ~/.ssh/id_rsa_gh</p>
 </blockquote>
-<p>I am a Data Scientist at Wipfli LLP, and this site is for <a href="./blog.html">blogging</a>, sharing <a href="./howto.html">how-to’s</a>, and sharing a little bit <a href="./about.html">about me</a>.</p>
-<p>For 2023 I’ve set a goal to begin blogging, mostly because I’m apprehensive to do so. I’ll be focusing on blogging and posting how-to’s, but I hope to add shareable content that few people will see or subscribe to <span>😂</span></p>
+<p>```</p></li>
+<li><p>ssh agent stuff….<a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent">ref</a></p>
+<ul>
+<li>if you changed the name of your key as I did above, you’ll nee to add the non-default name to the ssh-agent so it works:</li>
+</ul>
+<pre><code># start the ssh agent
+eval "$(ssh-agent -s)"
+
+# add the key
+ssh-add ~/.ssh/id_rsa_gh
+</code></pre></li>
+<li><p>add the key to github: <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account">adding a new ssh key to gh</a></p>
+<ul>
+<li>get the ssh public key file, and copy to your clipboard:</li>
+</ul>
+<pre><code># use the name of the file from the previous steps
+cat ~/.ssh/id_rsa_gh.pub</code></pre></li>
+</ul></li>
+<li><em>install git-lfs in your shell, assuming you are using linux. Mac/Windows probably can do <code>git lfs install</code> and be done</em></li>
+</ul>
 </section>
-</div>
+<section id="project-development" class="level2">
+<h2 class="anchored" data-anchor-id="project-development">project development</h2>
+<ul>
+<li><p>Create a new repo on github</p></li>
+<li><p>clone into your development environment via ssh <code>git clone git@github.com:yarrib/houseplant_classifier.git</code></p></li>
+<li><p>setup git-lfs in the repo with <code>git lfs install &amp;&amp; git lfs track "*.pkl" &amp;&amp; git add .gitattributes</code></p></li>
+<li><p>create your project</p>
+<ul>
+<li>steps</li>
+<li>steps</li>
+<li>steps</li>
+</ul></li>
+<li><p>once you are ready to push, add the files with <code>git add -A</code></p></li>
+<li><p>make your commit <code>git commit -m "my first commit</code></p></li>
+<li><p>push origin <code>git push origin main</code></p>
+<ul>
+<li>You might get this message on your push: `<code>&gt;batch response: This repository is over its data quota. Account responsible for LFS bandwidth should purchase more data packs to &gt;restore access.   &gt;error: failed to push some refs to 'github.com:yarrib/houseplant_classifier.git'</code></li>
+<li>to fix this you can (1) pay for more storage and upgrade your account, or (2) try the following free option: <a href="https://stackoverflow.com/questions/62905325/this-repository-is-over-its-data-quota-account-responsible-for-lfs-bandwidth-sh">SO source</a>
+<ul>
+<li>in Github go to the repo’s settings.</li>
+<li>on the main page in settings scroll down to <code>Archives</code></li>
+<li>check the box <code>Include Git LFS objects in archives</code></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="github-actions-integration" class="level2">
+<h2 class="anchored" data-anchor-id="github-actions-integration">github actions integration</h2>
+<p><a href="https://huggingface.co/docs/hub/spaces-github-actions">see hf spaces docs for more reference</a></p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

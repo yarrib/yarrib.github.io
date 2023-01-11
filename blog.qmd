@@ -1,5 +1,5 @@
 ---
-title: "Greetings!"
+title: "Blog"
 listing:
   id: hero-heading  
   contents: posts
@@ -12,13 +12,9 @@ page-layout: full
 title-block-banner: true
 ---
 
-Below are my most recent blog posts.
+Below are my most recent blog posts on a variety of topics, ordered by date. 
 
 
----
 
-:::{#hero-heading}
-
-:::
 
 

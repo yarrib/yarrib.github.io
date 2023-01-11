@@ -1,7 +1,7 @@
 ---
 title: Creating and Deploying a Model to HuggingFace Spaces with Gradio, Fastai, and GitHub Actions
 date: "2023-01-05"
-draft:true
+draft: true
 ---
 # Creating and Deploying a Model to HuggingFace Spaces with Gradio, Fastai, and GitHub Actions
 

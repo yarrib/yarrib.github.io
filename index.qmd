@@ -1,17 +1,28 @@
 ---
 page-layout: full
+
 ---
 
 ::: {.grid}
 
-::: {.g-col-12 .g-col-md-6}
-![](profile.jpg)
+::: {.g-col-12 .g-col-md-4}
+<img src="profile.jpg" 
+     width="100%" 
+     height="auto" />
 :::
 
-::: {.g-col-12 .g-col-md-6}
-# Hi, I'm Yarri
-I am a Data Scientist at Wipfli LLP. This blog is for sharing my thoughts on various topics in data science,
-helpful tips, and things I've learned.
+::: {.g-col-12 .g-col-md-8}
+# Hi, I'm Yarri,
+
+> The cute one is Mateo - aka Mr. Dude - the toddler who is a bundle of chaos at present.
+
+I am a Data Scientist at Wipfli LLP, and this site is for [blogging](blog.qmd), 
+sharing [how-to's](howto.qmd), and sharing a little bit [about me](about.qmd).
+
+For 2023 I've set a goal to begin blogging, mostly because I'm apprehensive to do so. 
+I'll be focusing on blogging and posting how-to's, but I hope to add shareable content that few
+people will see or subscribe to <span>&#x1F602;</span>
+
 :::
 
 

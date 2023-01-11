@@ -12,5 +12,9 @@
       "/posts/how-to-use-git-lfs-in-azureml/index.html",
       "/posts/my-foray-into-blogging/index.html"
     ]
+  },
+  {
+    "listing": "/howto.html",
+    "items": []
   }
 ]

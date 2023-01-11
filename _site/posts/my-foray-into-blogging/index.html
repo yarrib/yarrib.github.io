@@ -158,16 +158,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
  <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../til.html">
- <span class="menu-text">TIL</span></a>
+    <a class="nav-link" href="../../howto.html">
+ <span class="menu-text">How To’s</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/"><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/yarrib"><i class="bi bi-github" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com"><i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/yarribryn"><i class="bi bi-linkedin" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
@@ -526,7 +526,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>There is another way, however, that is pretty clever. It is more of a functional style and I’m fairly certain I’ve seen it used in the <a href="https://fast.ai">Fast AI</a> course or notebooks in addition to numerous tutorials on the internet. We will be using the <code>map</code> function over our columns.</p>
 <div class="cell" data-execution_count="84">
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>dfg_copy2 <span class="op">=</span> dfg.copy()</span>
-<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>dfg_copy2.columns <span class="op">=</span> dfg_copy2.columns.<span class="bu">map</span>(<span class="kw">lambda</span> x : <span class="st">'_'</span>.join(x) <span class="cf">if</span> x[<span class="op">-</span><span class="dv">1</span>] <span class="op">==</span> <span class="st">'_'</span> <span class="cf">else</span> x[<span class="dv">0</span>])</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>dfg_copy2.columns <span class="op">=</span> dfg_copy2.columns.<span class="bu">map</span>(<span class="kw">lambda</span> x : <span class="st">'_'</span>.join(x) <span class="cf">if</span> x[<span class="op">-</span><span class="dv">1</span>] <span class="op">!=</span> <span class="st">''</span> <span class="cf">else</span> x[<span class="dv">0</span>]))</span>
 <span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>dfg_copy2.head(<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="84">
