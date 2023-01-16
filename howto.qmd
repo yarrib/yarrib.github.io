@@ -1,7 +1,7 @@
 ---
 title: "My TILs (Today I Learned)"
 listing:
-  contents: til
+  contents: how-to
   feed: true
   sort-ui: true
   sort: 

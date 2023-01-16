@@ -6,8 +6,8 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/posts/why ds is hard/index.html",
       "/posts/dl-basics-with-fastai/index.html",
-      "/posts/how-to-use-git-lfs-in-azureml/index.html",
       "/posts/my-foray-into-blogging/index.html"
     ]
   }

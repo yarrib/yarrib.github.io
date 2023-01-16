@@ -3,7 +3,8 @@ title: "How to Setup Git-Lfs in Azure Machine Learning"
 author: "Yarri Bryn"
 date: "2023-01-04"
 categories: [git, azure machine learning]
-
+jupyter: python3
+draft: true
 ---
 
 # <font color="purple">**--------PUBLIC DRAFT--------**</font>
@@ -37,7 +38,21 @@ Lets see how to enable it in AzureML:
 
 1) Start a compute in AzureML
 2) Open a terminal
-3) install git lfs from source using sudo apt-get (if apt/debian, else yum)
+    + This can be done with the *Terminal* link or via *JupyterLab* if you like. 
+    I generally use Jupyter Lab but either work just fine.
+3) install git lfs in the terminal
+    + try to install with:
+
+        ```
+        !git lfs install
+        ``` 
+
+    + if that doesn't work try:
+
+        ```
+        sudo apt-get install git-lfs
+        ```
+
 4) instantiate any repos that will use lfs
 5) add and commit files as usual
 6) observe how lfs files are pushed

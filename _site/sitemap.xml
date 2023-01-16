@@ -1,35 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://yarrib.github.io/posts/how-to-use-git-lfs-in-azureml/index.html</loc>
-    <lastmod>2023-01-11T04:26:26.374Z</lastmod>
+    <loc>https://yarrib.github.io/posts/why ds is hard/index.html</loc>
+    <lastmod>2023-01-16T22:23:38.658Z</lastmod>
   </url>
   <url>
     <loc>https://yarrib.github.io/posts/my-foray-into-blogging/index.html</loc>
-    <lastmod>2023-01-11T04:26:27.009Z</lastmod>
+    <lastmod>2023-01-16T22:23:39.269Z</lastmod>
   </url>
   <url>
     <loc>https://yarrib.github.io/posts/dl-basics-with-fastai/index.html</loc>
-    <lastmod>2023-01-11T04:26:27.470Z</lastmod>
+    <lastmod>2023-01-16T22:23:39.722Z</lastmod>
   </url>
   <url>
     <loc>https://yarrib.github.io/index.html</loc>
-    <lastmod>2023-01-11T04:26:27.876Z</lastmod>
-  </url>
-  <url>
-    <loc>https://yarrib.github.io/how-to/demo.html</loc>
-    <lastmod>2023-01-11T04:26:29.520Z</lastmod>
+    <lastmod>2023-01-16T22:23:40.131Z</lastmod>
   </url>
   <url>
     <loc>https://yarrib.github.io/about.html</loc>
-    <lastmod>2023-01-11T04:26:29.964Z</lastmod>
+    <lastmod>2023-01-16T22:23:41.288Z</lastmod>
   </url>
   <url>
     <loc>https://yarrib.github.io/howto.html</loc>
-    <lastmod>2023-01-11T04:26:30.416Z</lastmod>
+    <lastmod>2023-01-16T22:23:41.734Z</lastmod>
   </url>
   <url>
     <loc>https://yarrib.github.io/blog.html</loc>
-    <lastmod>2023-01-11T04:26:30.902Z</lastmod>
+    <lastmod>2023-01-16T22:23:42.243Z</lastmod>
   </url>
 </urlset>

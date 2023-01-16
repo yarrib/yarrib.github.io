@@ -176,8 +176,15 @@ ul.task-list li input[type="checkbox"] {
 <p>Lets see how to enable it in AzureML:</p>
 <ol type="1">
 <li>Start a compute in AzureML</li>
-<li>Open a terminal</li>
-<li>install git lfs from source using sudo apt-get (if apt/debian, else yum)</li>
+<li>Open a terminal
+<ul>
+<li>This can be done with the <em>Terminal</em> link or via <em>JupyterLab</em> if you like. I generally use Jupyter Lab but either work just fine.</li>
+</ul></li>
+<li>install git lfs.
+<ul>
+<li>try to install with <code># bash      git lfs install</code></li>
+<li>if that doesn’t work try: <code># bash      sudo apt-get install git-lfs</code></li>
+</ul></li>
 <li>instantiate any repos that will use lfs</li>
 <li>add and commit files as usual</li>
 <li>observe how lfs files are pushed</li>

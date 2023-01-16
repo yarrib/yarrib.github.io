@@ -1,0 +1,11 @@
+{
+  "hash": "fd12a568c1b9e5003ce02716159dcf57",
+  "result": {
+    "markdown": "---\ntitle: How to Setup Git-Lfs in Azure Machine Learning\nauthor: Yarri Bryn\ndate: '2023-01-04'\ncategories:\n  - git\n  - azure machine learning\n---\n\n# <font color=\"purple\">**--------PUBLIC DRAFT--------**</font>\n\nToday I encountered an interesting challenge while working in Azure Machine Learning at work.\nFirst I'll provide a little overview of Azure ML as a tool, and explain where `git-lfs` comes\ninto play.\n\n\n## Azure ML: A Quick overview\n\n\n\n## Git-Lfs: Enabling practical data science\n\nMy challenge today was doing some professional development, building a sample model and \ndeploying a [Gradio](https://www.gradio.app) to \n[HuggingFace Spaces (HF)](https://huggingface.co/docs/hub/spaces). Well as it turns out the `model.pkl`\nfile that I created in training my simple model doesn't play nicely with HF.\n\n### Why is this?\n\nSimply put, large files and large binary files like .pkl files are both too large and not\nthe intended type of file to be saved into typical distributed version control like git. Thankfully,\nthe brilliant folks who build and maintain git stuff created [git-lfs](https://git-lfs.com),\na.k.a. *Git Large File Storage*. This allows the references to the big files to be pushed into a repo\nwhile separating the big files themselves into some other place. I'm not going to go into the details\nof how it works because (1) I only have a topical knowledge, and (2) that isn't the point.\n\nLets see how to enable it in AzureML:\n\n1) Start a compute in AzureML\n2) Open a terminal\n    + This can be done with the *Terminal* link or via *JupyterLab* if you like. \n    I generally use Jupyter Lab but either work just fine.\n3) install git lfs. \n    + try to install with \n        ```\n        # bash\n        git lfs install\n        ``` \n    + if that doesn't work try:\n        ```\n        # bash\n        sudo apt-get install git-lfs\n        ```\n4) instantiate any repos that will use lfs\n5) add and commit files as usual\n6) observe how lfs files are pushed\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}
