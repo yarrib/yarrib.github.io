@@ -21,18 +21,18 @@
     "text": "Recently I started the Fast.ai course Practical Deep Learning For Coders. Now this isn’t my first time around but I feel less intimidated this time. I watched all the video lessons for the 2020 version of the course, gaining some high level knowledge. I bought the book as well, which is mentioned on the course site lined above. I was excited about what is possible in deep learning yet equally intimidated by the sheer scope of the field.\nTo this day I am a believer in impostor syndrome; that is, I am living it on daily basis. Though I feel like I don’t know anything I am making tremendous progress in areas directly and indirectly related to deep learning.\nFor the 2020 course I found it hard to go beyond just running the provided notebooks. The barrier for me - and I’d wager for many others - is getting overwhelmed and making a list of things to learn instead of just doing it. This runs contrary to the Fast.ai principle of top down learning. For me there is a fear of failure in learning and/or establishing a career in data sience.\nYet everyone starts from somewhere and I don’t believe its possible to go from zero to hero in a few weeks. Consistent effort is the recipe for success. Some people find success more quickly, others it takes longer. Persistence is key.\nAs noted in my first blog post, I’ve resisted starting a blog even though it is an excellent way to share and learn. As I learn I hope to share perspectives that are suited towards people like me; those that are always learning and like to relate to things common sense terms. Lets get started!\n\n\nWhat is deep learning and what is it all about?*\n\nIn normal human speak, deep learning is an evolution and subset of machine learning.\nDeep Learning (DL) is centered around something called neural networks.\nNeural nets are a type of machine learning model architecture, which in theory permit a universally flexible function to approximate any relationship of observations to outcomes.\nA machine learning model is a general way to solve a problem. For example, given some data and some label that it belongs to, e.g. demographic data (features) that maps to what your income might be (target), we try to create a model which “learns” how X (features) maps to y (target).\nA model architecture is the math behind this process. Neural nets are flexible because they use clever math to create and learn values of hidden parameters that allow us to go from X -> y.\nDo you need to know the details beyond this? Yeah, you do. But not yet. Don’t worry about it!\n\nCan deep learning be easy?\n\nJeremy Howard says it can be learned by doing, and some things that were beyond difficult a decade ago are trivial today.\nIt is not easy, however, nor is it quick to learn. Practice on a regular basis and you will accumilate knowledge.\n\nWhat is a simple way to train a model?\nFirst of all, do yourself a favor and don’t try to write things from scratch. Use Fastai or another library which can abstract the details and boilerplate code. Second, create a model! This will be a computer vision model that classifies species of houseplants. Pick some topic that interests you and solve a trivial problem.\n\nHere is the repo behind this app, hosted on huggingface spaces here\nSteps:\n\nget data: web scrape from duck duck go\npreprocess data\ntrain model\nevaulate result\ncreate a Gradio app: you don’t need to do much!\npublish model to Huggingface Spaces: use git or even the file upload if git sounds too hard right now\n\n\n\n\n\n\n\n\n\n\nCreating a project like the above is relatively straightfoward, but I totally understand how it can seem hard at first. Getting an error or trying to figure out how something works can be a tedious process, but you can do it. It is challenging to learn, and easy to get discouraged. But everyone starts somewhere, and you learn by doing. Stay positive and patient!"
   },
   {
-    "objectID": "til.html",
-    "href": "til.html",
-    "title": "My TILs (Today I Learned)",
-    "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\nTitle\n\n\n\n\n\n\n\n\nmatplotlib demo\n\n\n\n\n\n\nNo matching items"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Yarri Bryn",
     "section": "",
     "text": "Hi, I’m Yarri,\n\nThe cute one is Mateo - aka Mr. Dude - the toddler who is a bundle of chaos at present.\n\nI am a Data Scientist at Wipfli LLP, and this site is for blogging, sharing how-to’s, and sharing a little bit about me.\nFor 2023 I’ve set a goal to begin blogging, mostly because I’m apprehensive to do so. I’ll be focusing on blogging and posting how-to’s, but I hope to add shareable content that few people will see or subscribe to 😂"
+  },
+  {
+    "objectID": "how-to/demo.html",
+    "href": "how-to/demo.html",
+    "title": "matplotlib demo",
+    "section": "",
+    "text": "For a demonstration of a line plot on a polar axis, see Figure 1.\n\n\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\n\n\n\nFigure 1: A line plot on a polar axis"
   },
   {
     "objectID": "about.html",
@@ -56,20 +56,6 @@
     "text": "Skills\n\nSoft Skills\n\nCommunication\nCollaboration\nProblem Solving\n\nTechnical Skills\n\nData Engineering\nMachine Learning\nDevOps/MLOps\nInfrastructure as Code\n\nTools\n\nMicrosoft: Azure Synapse Analytics (and ADF), AzureML, SQL Server, PowerBI\nOpen Source: Git, Shell (bash/zsh), Anaconda, Docker\nOther: Terraform\n\nLanguages\n\nPython\nSQL\nSpark/PySpark"
   },
   {
-    "objectID": "til/demo.html",
-    "href": "til/demo.html",
-    "title": "matplotlib demo",
-    "section": "",
-    "text": "For a demonstration of a line plot on a polar axis, see Figure 1.\n\n\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\n\n\n\nFigure 1: A line plot on a polar axis"
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Below are my most recent blog posts on a variety of topics, ordered by date.\n\n\n\n\n\n\n\n\n\n\nFastai Course v2022, Lessons 1 and 2\n\n\n\n\n\n\n\nabout\n\n\nfastai\n\n\ndeep learning\n\n\n\n\n\n\n\n\n\n\n\nJan 5, 2023\n\n\nYarri Bryn\n\n\n\n\n\n\n\n\nHow to Setup Git-Lfs in Azure Machine Learning\n\n\n\n\n\n\n\ngit\n\n\nazure machine learning\n\n\n\n\n\n\n\n\n\n\n\nJan 4, 2023\n\n\nYarri Bryn\n\n\n\n\n\n\n\n\nWhy would I blog?\n\n\n\n\n\n\n\nnews\n\n\ngeneral\n\n\npython\n\n\ncomprehensions\n\n\n\n\n\n\n\n\n\n\n\nJan 1, 2023\n\n\nYarri Bryn\n\n\n\n\n\n\nNo matching items"
-  },
-  {
     "objectID": "howto.html",
     "href": "howto.html",
     "title": "My TILs (Today I Learned)",
@@ -77,10 +63,10 @@
     "text": "Date\n\n\nTitle\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "how-to/demo.html",
-    "href": "how-to/demo.html",
-    "title": "matplotlib demo",
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
     "section": "",
-    "text": "For a demonstration of a line plot on a polar axis, see Figure 1.\n\n\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\n\n\n\nFigure 1: A line plot on a polar axis"
+    "text": "Below are my most recent blog posts on a variety of topics, ordered by date.\n\n\n\n\n\n\n\n\n\n\nFastai Course v2022, Lessons 1 and 2\n\n\n\n\n\n\n\nabout\n\n\nfastai\n\n\ndeep learning\n\n\n\n\n\n\n\n\n\n\n\nJan 5, 2023\n\n\nYarri Bryn\n\n\n\n\n\n\n\n\nHow to Setup Git-Lfs in Azure Machine Learning\n\n\n\n\n\n\n\ngit\n\n\nazure machine learning\n\n\n\n\n\n\n\n\n\n\n\nJan 4, 2023\n\n\nYarri Bryn\n\n\n\n\n\n\n\n\nWhy would I blog?\n\n\n\n\n\n\n\nnews\n\n\ngeneral\n\n\npython\n\n\ncomprehensions\n\n\n\n\n\n\n\n\n\n\n\nJan 1, 2023\n\n\nYarri Bryn\n\n\n\n\n\n\nNo matching items"
   }
 ]

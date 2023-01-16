@@ -1,9 +1,7 @@
 [
   {
-    "listing": "/til.html",
-    "items": [
-      "/til/demo.html"
-    ]
+    "listing": "/howto.html",
+    "items": []
   },
   {
     "listing": "/blog.html",
@@ -12,9 +10,5 @@
       "/posts/how-to-use-git-lfs-in-azureml/index.html",
       "/posts/my-foray-into-blogging/index.html"
     ]
-  },
-  {
-    "listing": "/howto.html",
-    "items": []
   }
 ]
