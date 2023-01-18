@@ -6,11 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Yarri Bryn">
 <meta name="dcterms.date" content="2023-01-05">
-<meta name="description" content="Deep Learning in normal human speak + A sample app">
 
-<title>Yarri Bryn - Fastai Course v2022, Lessons 1 and 2</title>
+<title>Yarri Bryn - Creating and Deploying a Model to HuggingFace Spaces with Gradio, Fastai, and GitHub Actions</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -95,7 +93,7 @@ cookieconsent.run({
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -153,30 +151,14 @@ cookieconsent.run({
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page">
-      <h1 class="title">Fastai Course v2022, Lessons 1 and 2</h1>
-                  <div>
-        <div class="description">
-          Deep Learning in normal human speak + A sample app
-        </div>
-      </div>
-                          <div class="quarto-categories">
-                <div class="quarto-category">about</div>
-                <div class="quarto-category">fastai</div>
-                <div class="quarto-category">deep learning</div>
-              </div>
-                  </div>
+    <div class="quarto-title column-body">
+      <h1 class="title">Creating and Deploying a Model to HuggingFace Spaces with Gradio, Fastai, and GitHub Actions</h1>
+                      </div>
   </div>
     
   
   <div class="quarto-title-meta">
 
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Yarri Bryn </p>
-            </div>
-    </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
@@ -189,62 +171,81 @@ cookieconsent.run({
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
-<section id="getting-started-with-fastai-a-no-code-overview" class="level1">
-<h1>Getting started with Fastai: A no-code overview</h1>
-<p>Recently I started the Fast.ai course <a href="https://course.fast.ai">Practical Deep Learning For Coders</a>. Now this isn’t my first time around but I feel less intimidated this time. I watched all the video lessons for the 2020 version of the course, gaining some high level knowledge. I bought the book as well, which is mentioned on the course site lined above. I was excited about what is possible in deep learning yet equally intimidated by the sheer scope of the field.</p>
-<p>To this day I am a believer in impostor syndrome; that is, I am living it on daily basis. Though I feel like I don’t know anything I am making tremendous progress in areas directly and indirectly related to deep learning.</p>
-<p>For the 2020 course I found it hard to go beyond just running the provided notebooks. The barrier for me - and I’d wager for many others - is getting overwhelmed and making a list of things to learn instead of just doing it. This runs contrary to the Fast.ai principle of top down learning. For me there is a fear of failure in learning and/or establishing a career in data sience.</p>
-<p>Yet everyone starts from somewhere and I don’t believe its possible to go from zero to hero in a few weeks. Consistent effort is the recipe for success. Some people find success more quickly, others it takes longer. Persistence is key.</p>
-<p>As noted in my first blog post, I’ve resisted starting a blog even though it is an excellent way to share and learn. As I learn I hope to share perspectives that are suited towards people like me; those that are always learning and like to relate to things common sense terms. Lets get started!</p>
-<section id="the-basics" class="level2">
-<h2 class="anchored" data-anchor-id="the-basics">The basics</h2>
-<p><strong>What is deep learning and what is it all about?</strong>*</p>
+<section id="creating-and-deploying-a-model-to-huggingface-spaces-with-gradio-fastai-and-github-actions" class="level1">
+<h1>Creating and Deploying a Model to HuggingFace Spaces with Gradio, Fastai, and GitHub Actions</h1>
+<p>To deploy a simple app to HuggingFace spaces with Gradio we can do this directly with huggingface repos. But wouldn’t it be nice to save the project to your github? Heres how</p>
+<section id="pre-work-ssh-key-and-git-lfs" class="level2">
+<h2 class="anchored" data-anchor-id="pre-work-ssh-key-and-git-lfs">pre work: ssh key and git lfs</h2>
 <ul>
-<li>In normal human speak, deep learning is an evolution and subset of machine learning.</li>
-<li>Deep Learning (DL) is centered around something called neural networks.</li>
-<li>Neural nets are a type of machine learning model architecture, which in theory permit a universally flexible function to approximate any relationship of observations to outcomes.</li>
-<li>A machine learning model is a general way to solve a problem. For example, given some data and some label that it belongs to, e.g.&nbsp;demographic data (features) that maps to what your income might be (target), we try to create a model which “learns” how X (features) maps to y (target).</li>
-<li>A model architecture is the math behind this process. Neural nets are flexible because they use clever math to create and learn values of hidden parameters that allow us to go from X -&gt; y.</li>
-<li>Do you need to know the details beyond this? Yeah, you do. But not yet. Don’t worry about it!</li>
+<li><em>authenticate to github with a personal access token or ssh - will show ssh</em>
+<ul>
+<li><p><a href="https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls">github getting started with remotes</a></p></li>
+<li><p>check if you have an existing ssh key: <code>ls -al ~/.ssh       # Lists the files in your .ssh directory, if they exist</code></p></li>
+<li><p>then, create a new key <code>ssh-keygen -t ed25519 -C "your_email@example.com"</code></p></li>
+<li><p>name your key to be specific to github, if desired ``` # you can use the default but in the event you are wokring with multiple keys this is recommended:</p>
+<blockquote class="blockquote">
+<p>Generating public/private ed25519 key pair. Enter file in which to save the key (~/.ssh/id_rsa): ~/.ssh/id_rsa_gh</p>
+</blockquote>
+<p>```</p></li>
+<li><p>ssh agent stuff….<a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent">ref</a></p>
+<ul>
+<li>if you changed the name of your key as I did above, you’ll nee to add the non-default name to the ssh-agent so it works:</li>
 </ul>
-<p><strong>Can deep learning be easy?</strong></p>
+<pre><code># start the ssh agent
+eval "$(ssh-agent -s)"
+
+# add the key
+ssh-add ~/.ssh/id_rsa_gh
+</code></pre></li>
+<li><p>add the key to github: <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account">adding a new ssh key to gh</a></p>
 <ul>
-<li>Jeremy Howard says it can be learned by doing, and some things that were beyond difficult a decade ago are trivial today.</li>
-<li>It is not easy, however, nor is it quick to learn. Practice on a regular basis and you will accumilate knowledge.</li>
+<li>get the ssh public key file, and copy to your clipboard:</li>
 </ul>
-<p><strong>What is a simple way to train a model?</strong></p>
-<p>First of all, do yourself a favor and don’t try to write things from scratch. Use Fastai or another library which can abstract the details and boilerplate code. Second, create a model! This will be a computer vision model that classifies species of houseplants. Pick some topic that interests you and solve a trivial problem.</p>
+<pre><code># use the name of the file from the previous steps
+cat ~/.ssh/id_rsa_gh.pub</code></pre></li>
+</ul></li>
+<li><em>install git-lfs in your shell, assuming you are using linux. Mac/Windows probably can do <code>git lfs install</code> and be done</em></li>
+</ul>
+</section>
+<section id="project-development" class="level2">
+<h2 class="anchored" data-anchor-id="project-development">project development</h2>
 <ul>
-<li>Here is the repo behind this app, hosted on huggingface spaces <a href="https://huggingface.co/spaces/yarrib/houseplants/tree/main">here</a></li>
-<li>Steps:
+<li><p>Create a new repo on github</p></li>
+<li><p>clone into your development environment via ssh <code>git clone git@github.com:yarrib/houseplant_classifier.git</code></p></li>
+<li><p>setup git-lfs in the repo with <code>git lfs install &amp;&amp; git lfs track "*.pkl" &amp;&amp; git add .gitattributes</code></p></li>
+<li><p>create your project</p>
 <ul>
-<li>get data: web scrape from duck duck go</li>
-<li>preprocess data</li>
-<li>train model</li>
-<li>evaulate result</li>
-<li>create a Gradio app: you don’t need to do much!</li>
-<li>publish model to Huggingface Spaces: use git or even the file upload if git sounds too hard right now</li>
+<li>steps</li>
+<li>steps</li>
+<li>steps</li>
+</ul></li>
+<li><p>once you are ready to push, add the files with <code>git add -A</code></p></li>
+<li><p>make your commit <code>git commit -m "my first commit</code></p></li>
+<li><p>push origin <code>git push origin main</code></p>
+<ul>
+<li>You might get this message on your push: `<code>&gt;batch response: This repository is over its data quota. Account responsible for LFS bandwidth should purchase more data packs to &gt;restore access.   &gt;error: failed to push some refs to 'github.com:yarrib/houseplant_classifier.git'</code></li>
+<li>to fix this you can (1) pay for more storage and upgrade your account, or (2) try the following free option: <a href="https://stackoverflow.com/questions/62905325/this-repository-is-over-its-data-quota-account-responsible-for-lfs-bandwidth-sh">SO source</a>
+<ul>
+<li>in Github go to the repo’s settings.</li>
+<li>on the main page in settings scroll down to <code>Archives</code></li>
+<li>check the box <code>Include Git LFS objects in archives</code></li>
+</ul></li>
 </ul></li>
 </ul>
 </section>
-<section id="the-app" class="level2">
-<h2 class="anchored" data-anchor-id="the-app">The app</h2>
-<iframe src="https://yarrib-houseplants.hf.space" frameborder="0" width="100%" height="750px">
-</iframe>
-</section>
-<section id="parting-thoughts" class="level2">
-<h2 class="anchored" data-anchor-id="parting-thoughts">Parting thoughts</h2>
-<p>Creating a project like the above is relatively straightfoward, but I totally understand how it can seem hard at first. Getting an error or trying to figure out how something works can be a tedious process, but you can do it. It is challenging to learn, and easy to get discouraged. But everyone starts somewhere, and you learn by doing. Stay positive and patient!</p>
+<section id="github-actions-integration" class="level2">
+<h2 class="anchored" data-anchor-id="github-actions-integration">github actions integration</h2>
+<p><a href="https://huggingface.co/docs/hub/spaces-github-actions">see hf spaces docs for more reference</a></p>
 
 
 </section>

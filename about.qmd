@@ -11,6 +11,8 @@ about:
     - icon: github
       text: Github
       href: https://github.com/yarrib
+    - text: Kaggle
+      href: https://www.kaggle.com/yarribryn
 page-layout: full
 ---
 

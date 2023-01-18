@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Yarri Bryn">
-<meta name="dcterms.date" content="2023-01-05">
-<meta name="description" content="Deep Learning in normal human speak + A sample app">
+<meta name="dcterms.date" content="2023-01-18">
+<meta name="description" content="The good and the anxiety inducing">
 
-<title>Yarri Bryn - Fastai Course v2022, Lessons 1 and 2</title>
+<title>Yarri Bryn - How I feel about generative models like ChatGPT: Jan 2023</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -154,16 +154,16 @@ cookieconsent.run({
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page">
-      <h1 class="title">Fastai Course v2022, Lessons 1 and 2</h1>
+      <h1 class="title">How I feel about generative models like ChatGPT: Jan 2023</h1>
                   <div>
         <div class="description">
-          Deep Learning in normal human speak + A sample app
+          The good and the anxiety inducing
         </div>
       </div>
                           <div class="quarto-categories">
-                <div class="quarto-category">about</div>
-                <div class="quarto-category">fastai</div>
                 <div class="quarto-category">deep learning</div>
+                <div class="quarto-category">generative models</div>
+                <div class="quarto-category">large language models</div>
               </div>
                   </div>
   </div>
@@ -181,7 +181,7 @@ cookieconsent.run({
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">January 5, 2023</p>
+        <p class="date">January 18, 2023</p>
       </div>
     </div>
     
@@ -199,52 +199,23 @@ cookieconsent.run({
 
 
 
-<section id="getting-started-with-fastai-a-no-code-overview" class="level1">
-<h1>Getting started with Fastai: A no-code overview</h1>
-<p>Recently I started the Fast.ai course <a href="https://course.fast.ai">Practical Deep Learning For Coders</a>. Now this isn’t my first time around but I feel less intimidated this time. I watched all the video lessons for the 2020 version of the course, gaining some high level knowledge. I bought the book as well, which is mentioned on the course site lined above. I was excited about what is possible in deep learning yet equally intimidated by the sheer scope of the field.</p>
-<p>To this day I am a believer in impostor syndrome; that is, I am living it on daily basis. Though I feel like I don’t know anything I am making tremendous progress in areas directly and indirectly related to deep learning.</p>
-<p>For the 2020 course I found it hard to go beyond just running the provided notebooks. The barrier for me - and I’d wager for many others - is getting overwhelmed and making a list of things to learn instead of just doing it. This runs contrary to the Fast.ai principle of top down learning. For me there is a fear of failure in learning and/or establishing a career in data sience.</p>
-<p>Yet everyone starts from somewhere and I don’t believe its possible to go from zero to hero in a few weeks. Consistent effort is the recipe for success. Some people find success more quickly, others it takes longer. Persistence is key.</p>
-<p>As noted in my first blog post, I’ve resisted starting a blog even though it is an excellent way to share and learn. As I learn I hope to share perspectives that are suited towards people like me; those that are always learning and like to relate to things common sense terms. Lets get started!</p>
-<section id="the-basics" class="level2">
-<h2 class="anchored" data-anchor-id="the-basics">The basics</h2>
-<p><strong>What is deep learning and what is it all about?</strong>*</p>
+<section id="my-thoughts-on-generative-models-like-chatgpt" class="level1">
+<h1>My thoughts on generative models like ChatGPT</h1>
+<p>There has been a lot of buzz lately around certain generative models like ChatGPT, Codex, Dall-e 2, Bert, Stable Diffusion, and others. What they seem to have in common is:</p>
 <ul>
-<li>In normal human speak, deep learning is an evolution and subset of machine learning.</li>
-<li>Deep Learning (DL) is centered around something called neural networks.</li>
-<li>Neural nets are a type of machine learning model architecture, which in theory permit a universally flexible function to approximate any relationship of observations to outcomes.</li>
-<li>A machine learning model is a general way to solve a problem. For example, given some data and some label that it belongs to, e.g.&nbsp;demographic data (features) that maps to what your income might be (target), we try to create a model which “learns” how X (features) maps to y (target).</li>
-<li>A model architecture is the math behind this process. Neural nets are flexible because they use clever math to create and learn values of hidden parameters that allow us to go from X -&gt; y.</li>
-<li>Do you need to know the details beyond this? Yeah, you do. But not yet. Don’t worry about it!</li>
+<li>They were trained on massive datasets</li>
+<li>They are “large” models in that they have hundreds of millions or even many billions of learned parameters</li>
+<li>They were made by super smart people with access to state of the art GPU clusters</li>
+<li>They cost a lot of money to train</li>
 </ul>
-<p><strong>Can deep learning be easy?</strong></p>
-<ul>
-<li>Jeremy Howard says it can be learned by doing, and some things that were beyond difficult a decade ago are trivial today.</li>
-<li>It is not easy, however, nor is it quick to learn. Practice on a regular basis and you will accumilate knowledge.</li>
-</ul>
-<p><strong>What is a simple way to train a model?</strong></p>
-<p>First of all, do yourself a favor and don’t try to write things from scratch. Use Fastai or another library which can abstract the details and boilerplate code. Second, create a model! This will be a computer vision model that classifies species of houseplants. Pick some topic that interests you and solve a trivial problem.</p>
-<ul>
-<li>Here is the repo behind this app, hosted on huggingface spaces <a href="https://huggingface.co/spaces/yarrib/houseplants/tree/main">here</a></li>
-<li>Steps:
-<ul>
-<li>get data: web scrape from duck duck go</li>
-<li>preprocess data</li>
-<li>train model</li>
-<li>evaulate result</li>
-<li>create a Gradio app: you don’t need to do much!</li>
-<li>publish model to Huggingface Spaces: use git or even the file upload if git sounds too hard right now</li>
-</ul></li>
-</ul>
-</section>
-<section id="the-app" class="level2">
-<h2 class="anchored" data-anchor-id="the-app">The app</h2>
-<iframe src="https://yarrib-houseplants.hf.space" frameborder="0" width="100%" height="750px">
-</iframe>
-</section>
-<section id="parting-thoughts" class="level2">
-<h2 class="anchored" data-anchor-id="parting-thoughts">Parting thoughts</h2>
-<p>Creating a project like the above is relatively straightfoward, but I totally understand how it can seem hard at first. Getting an error or trying to figure out how something works can be a tedious process, but you can do it. It is challenging to learn, and easy to get discouraged. But everyone starts somewhere, and you learn by doing. Stay positive and patient!</p>
+<p>This seems to be at odds with the majority of the data science community, practitioners with far less resources, knowledge, and capabilities. In a way it’s a have and have-nots situation. But then again what have these models accomplished? Sure, there is novelty, some fun, and a ton of potential. However there is growing awareness and fear of AI and I feel like this has sparked calls for regulation, transparency, and improved data ethics.</p>
+<p>If you aren’t working for companies like OpenAI, Stability AI, Microsoft, or Google, there are still options for you. First, don’t get discouraged by the hype. If anything, embrace it. We are already seeing open sourcing of big models like BLOOM and Stable Diffusion, which brings large scale transfer learning in reach. Specifically if we look at TIMM or HuggingFace we see a ton of pretrained models that are supported by a robust community of brilliant folks with a passion for open source. These might not be the hyped models like ChatGPT, but we can still build amazing things with other model architectures.</p>
+<p>I think what is more important is to take advantage of the options provided by HuggingFace and others, the ability to test out pre-trained models and see how they go in your use case, on low-cost or free GPUs at a small scale. That is how everything starts, from an interesting idea, proof of concept, or passion. Start small, be happy you are living in an age of rapid AI development and community sharing, and focus on problems that you are about or that are beneficial to your situation.</p>
+<section id="will-data-scientists-be-replaced-by-automation-and-meta-models" class="level2">
+<h2 class="anchored" data-anchor-id="will-data-scientists-be-replaced-by-automation-and-meta-models">Will data scientists be replaced by automation and meta-models?</h2>
+<p>Honestly I cannot say. The best defense anyone has against being replaced or reduced to redundancy is to continue learning, exploring, and innovating. If aren’t creating new model architectures and are working as a data scientist or similar, you can still leverage these new technologies to create value for your company. The models themselves are really cool, but what is most important is business viability. Whether that means creating a company around an idea, or bringing new ideas to your company, the key is to keep looking for solutions to real life problems.</p>
+<p>I am hesistant to take a stance on this but I will say that I have some anxiety around whether I have a future in data science. It’s all about perspective and finding a place for yourself. Take AutoML for classical ML problems. It is pretty cool in that you can efficiently test out many model architectures and hyperparameter spaces without having to write hundreds of lines of code with the scikit-learn api. But, it also automates much of what we are taught in a machine learning course.</p>
+<p>As a reminder to myself and others I’ll leave you with this thought: Don’t be discouraged by the progress in research. Embrace it and know that your knowledge so far will help you better leverage these tools than those without a background in data science. Just because something new comes out that is a game changer, doesn’t mean its going to replace you. Last, take advantage of tools which permit you to write less boilerplate code and focus on the problem at hand.</p>
 
 
 </section>

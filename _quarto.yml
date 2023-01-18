@@ -12,6 +12,8 @@ website:
         file: about.qmd
       - text: "Blog"
         file: blog.qmd
+      - text: "Projects"
+        file: projects.qmd
       - text: "How To's"
         file: howto.qmd
       - icon: github
@@ -19,11 +21,16 @@ website:
       - icon: linkedin
         href: https://www.linkedin.com/in/yarribryn
       - text: kaggle
-        href: https://kaggle.com
+        href: https://www.kaggle.com/yarribryn
+  google-analytics:
+    tracking-id: "G-KHJ8SVY1DV"
+    version: 4
+    #anonymize-ip: true
+  cookie-consent: true
 
-  comments: 
-    utterances:
-      repo: https://github.com/yarrib/yarrib.github.io
+  # comments: 
+  #   utterances:
+  #     repo: https://github.com/yarrib/yarrib.github.io
 
 
 format:

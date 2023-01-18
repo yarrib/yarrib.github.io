@@ -1,0 +1,23 @@
+---
+title: "Projects"
+listing:
+  contents: projects
+  feed: true
+  sort-ui: true
+  sort: 
+    - "date desc"
+    - "title desc"
+  type: grid
+  image-height: 150px
+  image-placeholder: "themockup.png"
+  fields: [date, title]
+  categories: true
+  date-format: "YYYY-MM-DD"
+  page-size: 9
+toc: false
+toc-location: body
+page-layout: full
+title-block-banner: false
+---
+
+On this page I'll be posting links to projects I've worked on and/or research I've contributed to.
