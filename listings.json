@@ -1,9 +1,24 @@
 [
   {
-    "listing": "/index.html",
+    "listing": "/ccbce016/projects.html",
+    "items": []
+  },
+  {
+    "listing": "/projects.html",
+    "items": []
+  },
+  {
+    "listing": "/howto.html",
+    "items": []
+  },
+  {
+    "listing": "/blog.html",
     "items": [
-      "/posts/post-with-code/index.html",
-      "/posts/welcome/index.html"
+      "/posts/bearish-to-bullish-generative-ai/index.html",
+      "/posts/thoughts-on-llms-jan-2023/index.html",
+      "/posts/what-an-ms-in-ds-gets-you/index.html",
+      "/posts/dl-basics-with-fastai/index.html",
+      "/posts/my-foray-into-blogging/index.html"
     ]
   }
 ]
