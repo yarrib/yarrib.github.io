@@ -1,39 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://yarrib.github.io/posts/bearish-to-bullish-generative-ai/index.html</loc>
+    <lastmod>2023-04-02T01:49:39.599Z</lastmod>
+  </url>
+  <url>
     <loc>https://yarrib.github.io/posts/what-an-ms-in-ds-gets-you/index.html</loc>
-    <lastmod>2023-01-18T18:04:19.389Z</lastmod>
+    <lastmod>2023-04-02T01:49:40.295Z</lastmod>
   </url>
   <url>
     <loc>https://yarrib.github.io/posts/my-foray-into-blogging/index.html</loc>
-    <lastmod>2023-01-18T18:04:20.007Z</lastmod>
+    <lastmod>2023-04-02T01:49:40.729Z</lastmod>
   </url>
   <url>
     <loc>https://yarrib.github.io/posts/dl-basics-with-fastai/index.html</loc>
-    <lastmod>2023-01-18T18:04:20.478Z</lastmod>
+    <lastmod>2023-04-02T01:49:41.052Z</lastmod>
   </url>
   <url>
     <loc>https://yarrib.github.io/posts/thoughts-on-llms-jan-2023/index.html</loc>
-    <lastmod>2023-01-18T18:04:20.960Z</lastmod>
+    <lastmod>2023-04-02T01:49:41.375Z</lastmod>
+  </url>
+  <url>
+    <loc>https://yarrib.github.io/ccbce016/projects.html</loc>
+    <lastmod>2023-04-02T01:49:41.692Z</lastmod>
   </url>
   <url>
     <loc>https://yarrib.github.io/projects.html</loc>
-    <lastmod>2023-01-18T18:04:21.391Z</lastmod>
+    <lastmod>2023-04-02T01:49:41.997Z</lastmod>
   </url>
   <url>
     <loc>https://yarrib.github.io/index.html</loc>
-    <lastmod>2023-01-18T18:04:21.804Z</lastmod>
+    <lastmod>2023-04-02T01:49:42.287Z</lastmod>
   </url>
   <url>
     <loc>https://yarrib.github.io/about.html</loc>
-    <lastmod>2023-01-18T18:04:22.973Z</lastmod>
+    <lastmod>2023-04-02T01:49:43.104Z</lastmod>
   </url>
   <url>
     <loc>https://yarrib.github.io/howto.html</loc>
-    <lastmod>2023-01-18T18:04:23.398Z</lastmod>
+    <lastmod>2023-04-02T01:49:43.408Z</lastmod>
   </url>
   <url>
     <loc>https://yarrib.github.io/blog.html</loc>
-    <lastmod>2023-01-18T18:04:23.913Z</lastmod>
+    <lastmod>2023-04-02T01:49:43.797Z</lastmod>
   </url>
 </urlset>
