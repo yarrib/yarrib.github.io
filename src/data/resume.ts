@@ -66,6 +66,6 @@ export const RESUME = {
     { name: 'Azure AI Engineer Associate', issuer: 'Microsoft', year: '', href: 'https://learn.microsoft.com/api/credentials/share/en-us/BrynYarri-8693/54606310F509A36D?sharingId=6CDD086067656BC' },
     { name: 'Azure Data Scientist Associate', issuer: 'Microsoft', year: '', href: 'https://learn.microsoft.com/api/credentials/share/en-us/BrynYarri-8693/49187A8A470CAD03?sharingId=6CDD086067656BC' },
     { name: 'Azure Database Administrator Associate', issuer: 'Microsoft', year: '', href: 'https://learn.microsoft.com/api/credentials/share/en-us/BrynYarri-8693/4B8ACDB7A4C2A156?sharingId=6CDD086067656BC' },
-    { name: 'Coursera Specialization', issuer: 'Coursera', year: '', href: 'https://www.coursera.org/account/accomplishments/specialization/certificate/T7QNCU7742V5' },
+    { name: 'Machine Learning Engineering for Production (MLOps) Specialization', issuer: 'DeepLearning.AI · Coursera', year: '', href: 'https://www.coursera.org/account/accomplishments/specialization/certificate/T7QNCU7742V5' },
   ] as Cert[],
 };
