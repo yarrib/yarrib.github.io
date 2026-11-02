@@ -1,11 +1,30 @@
 ---
 import Base from '../layouts/Base.astro';
 import { RESUME } from '../data/resume';
+
+const featuredCerts = RESUME.certifications.filter((c) => c.featured);
+const otherCerts = RESUME.certifications.filter((c) => !c.featured);
 ---
 <Base title="Resume" description="Experience and education.">
   <h1>Resume</h1>
   <p class="lede">{RESUME.summary}</p>
   {RESUME.pdf && <p><a href={RESUME.pdf}>Download PDF</a></p>}
+
+  {featuredCerts.length > 0 && (
+    <>
+      <h2>Databricks certifications</h2>
+      <div class="cert-grid">
+        {featuredCerts.map((c) => (
+          <a class="cert" href={c.href}>
+            {c.image && <img class="cert-img" src={c.image} alt={`${c.issuer} ${c.name} badge`} width="90" height="120" loading="lazy" />}
+            <span class="cert-issuer">{c.issuer}</span>
+            <strong>{c.name}</strong>
+            <span class="cert-meta">{c.year ? `${c.year} · ` : ''}Verify →</span>
+          </a>
+        ))}
+      </div>
+    </>
+  )}
 
   <h2>Experience</h2>
   <ul class="list">
@@ -34,15 +53,15 @@ import { RESUME } from '../data/resume';
     ))}
   </ul>
 
-  {RESUME.certifications.length > 0 && (
+  {otherCerts.length > 0 && (
     <>
-      <h2>Certifications</h2>
+      <h2>Other certifications</h2>
       <ul class="list">
-        {RESUME.certifications.map((c) => (
+        {otherCerts.map((c) => (
           <li>
             <div class="row">
               <span>{c.href ? <a href={c.href}>{c.name}</a> : <strong>{c.name}</strong>} <span class="muted">· {c.issuer}</span></span>
-              <span class="meta">{c.year}</span>
+              {c.year && <span class="meta">{c.year}</span>}
             </div>
           </li>
         ))}

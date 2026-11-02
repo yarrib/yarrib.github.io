@@ -105,3 +105,20 @@ nav { row-gap: 0.3rem; flex-wrap: wrap; }
 .card p { margin: 0; font-size: 0.95rem; }
 .card .tagline { color: var(--muted); font-size: 0.9rem; }
 .card-links { display: flex; gap: 1rem; font: 0.9rem var(--sans); margin-top: auto !important; }
+
+.cert-grid { display: grid; gap: 0.75rem; grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr)); margin-bottom: 1rem; }
+.cert { display: flex; flex-direction: column; gap: 0.35rem; padding: 1rem; border: 1px solid var(--rule); border-left: 4px solid var(--accent); border-radius: 10px; color: var(--fg); text-decoration: none; }
+.cert:hover { border-color: var(--accent); }
+.cert strong { line-height: 1.3; }
+.cert-issuer, .cert-meta { font: 0.8rem var(--sans); color: var(--muted); }
+.cert-issuer { text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; color: var(--accent); }
+.cert-line { font: 0.9rem var(--sans); display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; }
+.cert-badge { font-weight: 600; color: var(--bg); background: var(--accent); padding: 0.15rem 0.6rem; border-radius: 999px; }
+
+.cert { align-items: flex-start; }
+.cert-img { width: 90px; height: auto; margin-bottom: 0.4rem; }
+.cert-strip { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; margin: 1.25rem 0 0; }
+.cert-badges { display: flex; gap: 0.5rem; }
+.cert-badges img { width: 60px; height: auto; transition: transform 0.15s; }
+.cert-badges:hover img { transform: translateY(-2px); }
+.cert-strip .cert-line { margin: 0; flex: 1 1 16rem; }

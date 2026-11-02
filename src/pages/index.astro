@@ -3,6 +3,9 @@ import Base from '../layouts/Base.astro';
 import { getPosts, fmtDate } from '../posts';
 import { PROJECTS } from '../data/projects';
 import ProjectCard from '../components/ProjectCard.astro';
+import { RESUME } from '../data/resume';
+
+const dbxCerts = RESUME.certifications.filter((c) => c.featured);
 
 const featured = PROJECTS.filter((p) => p.featured);
 
@@ -14,6 +17,19 @@ const posts = (await getPosts()).slice(0, 5);
     I'm an engineer working on data platforms, ML infrastructure and AI agents, mostly on Databricks and Azure.
     I like building tools that make other engineers faster, and I write here about what I learn doing it.
   </p>
+  {dbxCerts.length > 0 && (
+    <div class="cert-strip">
+      <a class="cert-badges" href="/resume/" aria-label="Certifications">
+        {dbxCerts.filter((c) => c.image).map((c) => (
+          <img src={c.image} alt={`Databricks ${c.name}`} title={`Databricks ${c.name}`} width="60" height="80" />
+        ))}
+      </a>
+      <p class="cert-line">
+        <span class="cert-badge">Databricks certified</span>
+        <a href="/resume/">{dbxCerts.map((c) => c.name).join(' · ')} →</a>
+      </p>
+    </div>
+  )}
 
   <p class="label">Selected work</p>
   <div class="cards">
