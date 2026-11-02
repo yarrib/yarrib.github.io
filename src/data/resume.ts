@@ -24,6 +24,8 @@ export const RESUME = {
         'Led and mentored an MLOps team of five to six engineers.',
         'Built the ML platform on Databricks and Azure (Unity Catalog, MLflow, Asset Bundles, CI/CD, Terraform), giving the ML team and several data science teams a repeatable path to production.',
         'Platform runs classic models and LLM document extraction agents, including a yearly job that trains 132 models in parallel.',
+        'Proved out and put Redgate Flyway into production for database migrations on two paths: GitHub Actions to AKS, and an internal Python package that runs migrations as a Databricks job against Lakebase, scaffolding its Makefile, job notebook and bundle.',
+        'Wrote the team playbook, handoff guide and repo conventions; they became the team standard and the base my successor built on.',
         'Designed a production agentic document extraction system for audit on Databricks (Lakebase Postgres as queue, Apps, Lakeflow Jobs, MLflow tracing), cutting extraction time from hours to minutes; 24 document types in production for hundreds of users.',
         'Co-authored a Databricks blog post on the architecture with Databricks Forward Deployed Engineering.',
       ],
