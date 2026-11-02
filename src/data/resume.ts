@@ -21,8 +21,10 @@ export const RESUME = {
       org: 'CLA',
       period: 'Dec 2024 – Sep 2026',
       points: [
-        'Built ML platform tooling on Databricks and Azure: Unity Catalog, MLflow, Asset Bundles, CI/CD and Terraform.',
-        'Designed a production agentic document extraction system for audit on Databricks (Lakebase Postgres as queue, Apps, Lakeflow Jobs, MLflow tracing), cutting extraction time from hours to minutes.',
+        'Led and mentored an MLOps team of five to six engineers.',
+        'Built the ML platform on Databricks and Azure (Unity Catalog, MLflow, Asset Bundles, CI/CD, Terraform), giving the ML team and several data science teams a repeatable path to production.',
+        'Platform runs classic models and LLM document extraction agents, including a yearly job that trains 132 models in parallel.',
+        'Designed a production agentic document extraction system for audit on Databricks (Lakebase Postgres as queue, Apps, Lakeflow Jobs, MLflow tracing), cutting extraction time from hours to minutes; 24 document types in production for hundreds of users.',
         'Co-authored a Databricks blog post on the architecture with Databricks Forward Deployed Engineering.',
       ],
     },

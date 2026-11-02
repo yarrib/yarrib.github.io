@@ -26,6 +26,7 @@ export const WORK: CaseStudy[] = [
     ],
     result: [
       'Extraction time went from hours to minutes.',
+      '24 document types in production, serving hundreds of users, with volume still growing.',
       'Built with Databricks Forward Deployed Engineering and written up on the Databricks blog.',
     ],
     stack: ['Lakebase Postgres', 'Databricks Apps', 'FastAPI', 'Lakeflow Jobs', 'MLflow Tracing', 'Unity Catalog'],
@@ -55,16 +56,19 @@ export const WORK: CaseStudy[] = [
     slug: 'ml-platform',
     title: 'An ML platform teams could actually ship on',
     summary:
-      'Standardized how models and data products get built, governed and deployed on Databricks and Azure.',
+      'Gave the ML and data science teams a governed, repeatable path to production on Databricks and Azure, and led the team that runs it.',
     problem:
-      'Data science teams shipped models inconsistently, with manual deployments, ad hoc environments and little governance.',
+      'Models and LLM-based extraction agents had no consistent path to production: environments, infrastructure and deployments were set up by hand, project by project.',
     approach: [
-      'Built shared tooling on Unity Catalog and MLflow for governed models, features and lineage.',
-      'Templated projects with Databricks Asset Bundles and wired them into CI/CD.',
-      'Managed the platform as code with Terraform.',
+      'Hardened the platform infrastructure as code with Terraform, and wired projects into CI/CD.',
+      'Built project templates on Databricks Asset Bundles so a new model or agent starts deployable.',
+      'Standardized governance and tracking on Unity Catalog and MLflow.',
+      'Led and mentored an MLOps team of five to six engineers.',
     ],
     result: [
-      'Gave teams a repeatable path from notebook to production.',
+      'Took time to production from no clear path to a repeatable one.',
+      'Supports the ML team and several data science teams, running both classic models and LLM-based document extraction agents in production.',
+      'Runs workloads like a yearly job that trains 132 models in parallel.',
     ],
     stack: ['Databricks', 'Unity Catalog', 'MLflow', 'Asset Bundles', 'Terraform', 'Azure DevOps'],
   },
