@@ -1,0 +1,54 @@
+---
+import Base from '../layouts/Base.astro';
+import { RESUME } from '../data/resume';
+---
+<Base title="Resume" description="Experience and education.">
+  <h1>Resume</h1>
+  <p class="lede">{RESUME.summary}</p>
+  {RESUME.pdf && <p><a href={RESUME.pdf}>Download PDF</a></p>}
+
+  <h2>Experience</h2>
+  <ul class="list">
+    {RESUME.experience.map((e) => (
+      <li>
+        <div class="row">
+          <span><strong>{e.role}</strong> <span class="muted">· {e.org}</span></span>
+          {e.period && <span class="meta">{e.period}</span>}
+        </div>
+        {e.points.length > 0 && (
+          <ul class="points">{e.points.map((p) => <li>{p}</li>)}</ul>
+        )}
+      </li>
+    ))}
+  </ul>
+
+  <h2>Education</h2>
+  <ul class="list">
+    {RESUME.education.map((e) => (
+      <li>
+        <div class="row">
+          <span><strong>{e.degree}</strong> <span class="muted">· {e.school}</span></span>
+          <span class="meta">{e.period}</span>
+        </div>
+      </li>
+    ))}
+  </ul>
+
+  {RESUME.certifications.length > 0 && (
+    <>
+      <h2>Certifications</h2>
+      <ul class="list">
+        {RESUME.certifications.map((c) => (
+          <li>
+            <div class="row">
+              <span>{c.href ? <a href={c.href}>{c.name}</a> : <strong>{c.name}</strong>} <span class="muted">· {c.issuer}</span></span>
+              <span class="meta">{c.year}</span>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </>
+  )}
+
+  <p class="muted" style="margin-top:2rem">See also: <a href="/skills/">Skills</a> · <a href="/projects/">Projects</a></p>
+</Base>

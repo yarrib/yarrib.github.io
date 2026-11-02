@@ -1,0 +1,19 @@
+---
+import Base from '../layouts/Base.astro';
+import { PROJECTS } from '../data/projects';
+---
+<Base title="Projects" description="Things I'm building.">
+  <h1>Projects</h1>
+  <p class="muted">Side projects, mostly tools for engineers. Code is on <a href="https://github.com/yarrib">GitHub</a>.</p>
+  <ul class="list">
+    {PROJECTS.map((p) => (
+      <li>
+        <div class="row">
+          {p.href ? <a class="title" href={p.href}>{p.name}</a> : <span class="title"><strong>{p.name}</strong></span>}
+          <span class="meta">{p.status}</span>
+        </div>
+        <p>{p.blurb}</p>
+      </li>
+    ))}
+  </ul>
+</Base>

@@ -1,0 +1,43 @@
+---
+import Base from '../layouts/Base.astro';
+import { getPosts, fmtDate } from '../posts';
+import { PROJECTS } from '../data/projects';
+
+const posts = (await getPosts()).slice(0, 5);
+---
+<Base>
+  <h1>Hi, I'm Yarri.</h1>
+  <p class="lede">
+    I'm an engineer working on data platforms, ML infrastructure and AI agents, mostly on Databricks and Azure.
+    I like building tools that make other engineers faster, and I write here about what I learn doing it.
+  </p>
+
+  <p class="label">Writing</p>
+  {posts.length === 0 ? (
+    <p class="empty">First post is on the way.</p>
+  ) : (
+    <ul class="list">
+      {posts.map((p) => (
+        <li>
+          <div class="row">
+            <a class="title" href={`/writing/${p.id}/`}>{p.data.title}</a>
+            <time datetime={p.data.date.toISOString()}>{fmtDate(p.data.date)}</time>
+          </div>
+        </li>
+      ))}
+    </ul>
+  )}
+
+  <p class="label">Projects</p>
+  <ul class="list">
+    {PROJECTS.map((p) => (
+      <li>
+        <div class="row">
+          {p.href ? <a class="title" href={p.href}>{p.name}</a> : <span class="title"><strong>{p.name}</strong></span>}
+          <span class="meta">{p.status}</span>
+        </div>
+        <p>{p.blurb}</p>
+      </li>
+    ))}
+  </ul>
+</Base>

@@ -1,0 +1,24 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getPosts, fmtDate } from '../../posts';
+
+const posts = await getPosts();
+---
+<Base title="Writing" description="Posts on building tools, agents and data platforms.">
+  <h1>Writing</h1>
+  {posts.length === 0 ? (
+    <p class="empty">Nothing here yet. First post is on the way.</p>
+  ) : (
+    <ul class="list">
+      {posts.map((p) => (
+        <li>
+          <div class="row">
+            <a class="title" href={`/writing/${p.id}/`}>{p.data.title}</a>
+            <time datetime={p.data.date.toISOString()}>{fmtDate(p.data.date)}</time>
+          </div>
+          <p>{p.data.description}</p>
+        </li>
+      ))}
+    </ul>
+  )}
+</Base>
