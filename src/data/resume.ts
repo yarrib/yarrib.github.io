@@ -45,5 +45,10 @@ export const RESUME = {
     { degree: 'M.S. Data Science', school: 'University of Wisconsin–Eau Claire', period: '2019 – 2022' },
     { degree: 'B.A. Marketing Management', school: 'University of Northern Iowa', period: '2009 – 2013' },
   ],
-  certifications: [] as { name: string; issuer: string; year: string; href?: string }[],
+  certifications: [
+    { name: 'Azure Data Engineer Associate', issuer: 'Microsoft', year: '', href: 'https://www.credly.com/badges/89155f7a-fb11-4942-b40c-8fb74ff882a3' },
+    { name: 'Azure Data Scientist Associate', issuer: 'Microsoft', year: '', href: 'https://www.credly.com/badges/0fdbb816-ed03-4f3e-9951-2027403f34f9' },
+    { name: 'Azure Database Administrator Associate', issuer: 'Microsoft', year: '', href: 'https://www.credly.com/badges/7bfd1940-e3bc-49d5-af90-060da680f0a4' },
+    // TODO: Databricks certifications
+  ] as { name: string; issuer: string; year: string; href?: string }[],
 };

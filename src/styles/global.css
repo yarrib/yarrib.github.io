@@ -95,3 +95,13 @@ main { padding: 2rem 0 4rem; }
 .chips { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
 .chips li { font: 0.85rem var(--sans); padding: 0.3rem 0.7rem; border: 1px solid var(--rule); border-radius: 999px; }
 nav { row-gap: 0.3rem; flex-wrap: wrap; }
+
+.cards { display: grid; gap: 1rem; margin: 0.5rem 0 1rem; }
+@media (min-width: 640px) { .cards { grid-template-columns: 1fr 1fr; } }
+.card { border: 1px solid var(--rule); border-radius: 12px; padding: 1.1rem 1.2rem; display: flex; flex-direction: column; gap: 0.6rem; }
+.card h3 { margin: 0; font-size: 1.2rem; }
+.card h3 a { color: var(--fg); text-decoration: none; }
+.card h3 a:hover { color: var(--accent); }
+.card p { margin: 0; font-size: 0.95rem; }
+.card .tagline { color: var(--muted); font-size: 0.9rem; }
+.card-links { display: flex; gap: 1rem; font: 0.9rem var(--sans); margin-top: auto !important; }

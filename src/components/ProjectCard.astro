@@ -1,0 +1,16 @@
+---
+import type { Project } from '../data/projects';
+interface Props { project: Project; compact?: boolean }
+const { project: p, compact = false } = Astro.props;
+---
+<article class="card">
+  <div class="card-head">
+    <h3>{p.links[0] ? <a href={p.links[0].href}>{p.name}</a> : p.name}</h3>
+    <p class="tagline">{p.tagline}</p>
+  </div>
+  {!compact && <p>{p.description}</p>}
+  <ul class="chips">{p.stack.map((s) => <li>{s}</li>)}</ul>
+  {!compact && p.links.length > 0 && (
+    <p class="card-links">{p.links.map((l) => <a href={l.href}>{l.label} →</a>)}</p>
+  )}
+</article>
