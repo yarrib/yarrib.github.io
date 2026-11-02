@@ -24,10 +24,10 @@ export const PROJECTS: Project[] = [
   },
   {
     name: 'Beo Bakes',
-    tagline: 'Website for a decorated-cookie business',
+    tagline: 'Website and private AI design studio for a decorated-cookie business',
     description:
-      'I built and maintain the Beo Bakes website: a content-managed site the business can update itself, plus the domain, email deliverability and hosting setup behind it.',
-    stack: ['Next.js', 'Sanity', 'Vercel'],
+      'I built and maintain the Beo Bakes website: a content-managed site the business can update itself, plus the domain, email deliverability and hosting setup behind it. Behind a login I also built a private AI design studio. You chat or talk to an agent ("Bluey cookies for a 5 year old\'s party") and it plans a cookie set from the cutters, dyes and sprinkles actually on hand, finds similar past designs, lists what is missing to buy, and drafts Instagram captions. Vision models index photos of cutters, dyes and finished sets so everything is searchable.',
+    stack: ['Next.js', 'Sanity', 'Vercel', 'Neon', 'pgvector', 'Claude API'],
     links: [{ label: 'Visit site', href: 'https://beobakes.com' }],
     featured: true,
   },
