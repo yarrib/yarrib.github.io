@@ -12,7 +12,7 @@ export const RESUME = {
       period: 'Sep 2026 – Present',
       points: [
         'Prototype and prove out new solutions with vendors and internal groups, then hand working deliverables to delivery teams.',
-        'Built a proof-of-concept agentic application solo in under two weeks, running end to end on Databricks (Apps, Lakebase, durable workflows with DBOS, agents) with a React, Express and FastAPI stack.',
+        'Built a proof-of-concept agentic application solo in about ten working days, running end to end on Databricks (Apps, Lakebase, durable workflows with DBOS, agents) with a React, Express and FastAPI stack.',
         'Evaluating ontology, taxonomy and master-data tooling on Databricks.',
       ],
     },
@@ -22,7 +22,8 @@ export const RESUME = {
       period: 'Dec 2024 – Sep 2026',
       points: [
         'Built ML platform tooling on Databricks and Azure: Unity Catalog, MLflow, Asset Bundles, CI/CD and Terraform.',
-        'Designed a production document extraction system using Postgres as a work queue.',
+        'Designed a production agentic document extraction system for audit on Databricks (Lakebase Postgres as queue, Apps, Lakeflow Jobs, MLflow tracing), cutting extraction time from hours to minutes.',
+        'Co-authored a Databricks blog post on the architecture with Databricks Forward Deployed Engineering.',
       ],
     },
     {

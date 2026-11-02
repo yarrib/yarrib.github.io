@@ -122,3 +122,15 @@ nav { row-gap: 0.3rem; flex-wrap: wrap; }
 .cert-badges img { width: 60px; height: auto; transition: transform 0.15s; }
 .cert-badges:hover img { transform: translateY(-2px); }
 .cert-strip .cert-line { margin: 0; flex: 1 1 16rem; }
+
+.case { padding: 0.5rem 0 2rem; border-bottom: 1px solid var(--rule); }
+.case:last-of-type { border-bottom: 0; }
+.case h2 { margin-top: 2rem; }
+.case .label { margin: 1.25rem 0 0.35rem; }
+.case ul:not(.chips) { margin: 0; padding-left: 1.2rem; }
+.case-summary { color: var(--muted); }
+.case .chips { margin-top: 1rem; }
+.featured-in { border: 1px solid var(--rule); border-left: 4px solid var(--accent); border-radius: 10px; padding: 0.9rem 1rem; margin: 1.25rem 0 0; font: 0.95rem var(--sans); }
+.featured-in a { color: var(--fg); font-weight: 600; text-decoration: none; }
+.featured-in a:hover { color: var(--accent); }
+.case-list a.title { display: block; }

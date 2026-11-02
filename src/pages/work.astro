@@ -1,0 +1,23 @@
+---
+import Base from '../layouts/Base.astro';
+import { WORK } from '../data/work';
+---
+<Base title="Work" description="Selected case studies: agentic systems, ML platforms and prototypes on Databricks.">
+  <h1>Work</h1>
+  <p class="lede">Selected problems I've solved. Client and internal names are left out where they're not public.</p>
+
+  {WORK.map((w) => (
+    <article class="case" id={w.slug}>
+      <h2>{w.title}</h2>
+      <p class="case-summary">{w.summary}</p>
+      <p class="label">Problem</p>
+      <p>{w.problem}</p>
+      <p class="label">Approach</p>
+      <ul>{w.approach.map((a) => <li>{a}</li>)}</ul>
+      <p class="label">Result</p>
+      <ul>{w.result.map((r) => <li>{r}</li>)}</ul>
+      <ul class="chips">{w.stack.map((s) => <li>{s}</li>)}</ul>
+      {w.links && <p class="card-links">{w.links.map((l) => <a href={l.href}>{l.label} →</a>)}</p>}
+    </article>
+  ))}
+</Base>
