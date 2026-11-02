@@ -60,9 +60,9 @@ export const RESUME = {
   ],
   // Databricks certs are featured: shown first, as badge cards. Check each name matches its credential link.
   certifications: [
-    { name: 'Machine Learning Engineer Professional', issuer: 'Databricks', year: '', href: 'https://credentials.databricks.com/4cf00d9f-d2da-4a0f-98f4-6e5f71a52233', featured: true, image: '/certs/databricks-ml-engineer-professional.png' },
+    { name: 'Machine Learning Engineer Professional', issuer: 'Databricks', year: '', href: 'https://credentials.databricks.com/9693cff9-51ea-4cb6-97eb-f4c82f8a9b1f', featured: true, image: '/certs/databricks-ml-engineer-professional.png' },
     { name: 'Generative AI Engineer Associate', issuer: 'Databricks', year: '', href: 'https://credentials.databricks.com/409842dd-ab7b-482e-b793-1032a15e5d44', featured: true, image: '/certs/databricks-genai-engineer-associate.png' },
-    { name: 'Context Engineer Associate', issuer: 'Databricks', year: '', href: 'https://credentials.databricks.com/9693cff9-51ea-4cb6-97eb-f4c82f8a9b1f', featured: true, image: '/certs/databricks-context-engineer-associate.png' },
+    { name: 'Context Engineer Associate', issuer: 'Databricks', year: '', href: 'https://credentials.databricks.com/4cf00d9f-d2da-4a0f-98f4-6e5f71a52233', featured: true, image: '/certs/databricks-context-engineer-associate.png' },
     { name: 'Azure AI Engineer Associate', issuer: 'Microsoft', year: '', href: 'https://learn.microsoft.com/api/credentials/share/en-us/BrynYarri-8693/54606310F509A36D?sharingId=6CDD086067656BC' },
     { name: 'Azure Data Scientist Associate', issuer: 'Microsoft', year: '', href: 'https://learn.microsoft.com/api/credentials/share/en-us/BrynYarri-8693/49187A8A470CAD03?sharingId=6CDD086067656BC' },
     { name: 'Azure Database Administrator Associate', issuer: 'Microsoft', year: '', href: 'https://learn.microsoft.com/api/credentials/share/en-us/BrynYarri-8693/4B8ACDB7A4C2A156?sharingId=6CDD086067656BC' },
