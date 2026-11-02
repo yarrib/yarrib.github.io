@@ -1,0 +1,13 @@
+---
+import Base from '../layouts/Base.astro';
+import { SKILLS } from '../data/skills';
+---
+<Base title="Skills" description="Tools and areas I work in.">
+  <h1>Skills</h1>
+  {SKILLS.map((s) => (
+    <section>
+      <p class="label">{s.group}</p>
+      <ul class="chips">{s.items.map((i) => <li>{i}</li>)}</ul>
+    </section>
+  ))}
+</Base>

@@ -1,0 +1,12 @@
+---
+import Base from '../layouts/Base.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import { PROJECTS } from '../data/projects';
+---
+<Base title="Projects" description="Things I've built and maintain.">
+  <h1>Projects</h1>
+  <p class="muted">Things I've built and maintain outside my day job. More on <a href="https://github.com/yarrib">GitHub</a>.</p>
+  <div class="cards">
+    {PROJECTS.map((p) => <ProjectCard project={p} />)}
+  </div>
+</Base>

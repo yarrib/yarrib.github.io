@@ -1,0 +1,30 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../site';
+---
+<Base title="About" description="About Yarri Bryn.">
+  <div class="about-head">
+    <img src="/profile.jpg" alt="Yarri Bryn" width="104" height="104" />
+    <div>
+      <h1>About</h1>
+      <p class="muted" style="margin:0">Minnesota · <a href={SITE.links.github}>GitHub</a> · <a href={SITE.links.linkedin}>LinkedIn</a></p>
+    </div>
+  </div>
+
+  <p>
+    I'm a Staff Innovation Engineer at CLA, where I prototype and prove out new solutions, then hand them off
+    to the teams that run them. Before that I worked on ML platforms and MLOps: Databricks, Unity Catalog,
+    MLflow, Asset Bundles, CI/CD and Terraform on Azure.
+  </p>
+  <p>
+    I came to tech sideways, from local government (and before that, a few years playing golf professionally).
+    That path left me with a bias for practical tools that make other people's work easier.
+  </p>
+  <p>
+    These days I'm most interested in AI agents that run reliably without supervision, durable execution,
+    developer experience, and learning Rust.
+  </p>
+
+  <p>Outside work: golf, time outdoors, and an ever-growing list of projects around the house.</p>
+  <p class="muted">The career version is on the <a href="/resume/">Resume</a> page.</p>
+</Base>
