@@ -23,10 +23,10 @@ export const PROJECTS: Project[] = [
   },
   {
     name: 'Beo Bakes',
-    tagline: 'Web presence and storefront for a decorated-cookie business',
+    tagline: 'Website for a decorated-cookie business',
     description:
-      'I built and maintain the site and online shop for Beo Bakes: a content-managed marketing site with an integrated storefront, plus the domain, email deliverability and hosting setup behind it.',
-    stack: ['Next.js', 'Sanity', 'Shopify Hydrogen', 'Vercel'],
+      'I built and maintain the Beo Bakes website: a content-managed site the business can update itself, plus the domain, email deliverability and hosting setup behind it.',
+    stack: ['Next.js', 'Sanity', 'Vercel'],
     links: [{ label: 'Visit site', href: 'https://beobakes.com' }],
     featured: true,
   },
