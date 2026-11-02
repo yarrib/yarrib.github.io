@@ -1,13 +1,31 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { getPosts, fmtDate } from '../../posts';
+import { EXTERNAL_WRITING } from '../../data/work';
 
 const posts = await getPosts();
 ---
 <Base title="Writing" description="Posts on building tools, agents and data platforms.">
   <h1>Writing</h1>
+  {EXTERNAL_WRITING.length > 0 && (
+    <>
+      <p class="label">Published elsewhere</p>
+      <ul class="list">
+        {EXTERNAL_WRITING.map((e) => (
+          <li>
+            <div class="row">
+              <a class="title" href={e.href}>{e.title} ↗</a>
+              <time datetime={e.date.toISOString()}>{fmtDate(e.date)}</time>
+            </div>
+            <p>{e.venue}</p>
+          </li>
+        ))}
+      </ul>
+      <p class="label">Here</p>
+    </>
+  )}
   {posts.length === 0 ? (
-    <p class="empty">Nothing here yet. First post is on the way.</p>
+    <p class="empty">First post here is on the way.</p>
   ) : (
     <ul class="list">
       {posts.map((p) => (

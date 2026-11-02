@@ -4,6 +4,7 @@ import { getPosts, fmtDate } from '../posts';
 import { PROJECTS } from '../data/projects';
 import ProjectCard from '../components/ProjectCard.astro';
 import { RESUME } from '../data/resume';
+import { WORK, EXTERNAL_WRITING } from '../data/work';
 
 const dbxCerts = RESUME.certifications.filter((c) => c.featured);
 
@@ -12,10 +13,10 @@ const featured = PROJECTS.filter((p) => p.featured);
 const posts = (await getPosts()).slice(0, 5);
 ---
 <Base>
-  <h1>Hi, I'm Yarri.</h1>
+  <h1>I turn AI ideas into working systems on Databricks, fast.</h1>
   <p class="lede">
-    I'm an engineer working on data platforms, ML infrastructure and AI agents, mostly on Databricks and Azure.
-    I like building tools that make other engineers faster, and I write here about what I learn doing it.
+    I'm Yarri Bryn, a staff engineer who prototypes and ships agentic applications, ML platforms and data products.
+    Bring me a hard problem: I'll investigate, build the thing, prove it works, and hand it off.
   </p>
   {dbxCerts.length > 0 && (
     <div class="cert-strip">
@@ -31,25 +32,48 @@ const posts = (await getPosts()).slice(0, 5);
     </div>
   )}
 
+  {EXTERNAL_WRITING[0] && (
+    <p class="featured-in">
+      <span class="muted">Featured on the Databricks blog: </span>
+      <a href={EXTERNAL_WRITING[0].href}>{EXTERNAL_WRITING[0].title} →</a>
+    </p>
+  )}
+
   <p class="label">Selected work</p>
+  <ul class="list case-list">
+    {WORK.map((w) => (
+      <li>
+        <a class="title" href={`/work/#${w.slug}`}>{w.title}</a>
+        <p>{w.summary}</p>
+      </li>
+    ))}
+  </ul>
+  <p><a href="/work/">Read the case studies →</a></p>
+
+  <p class="label">Side projects</p>
   <div class="cards">
     {featured.map((p) => <ProjectCard project={p} />)}
   </div>
   <p><a href="/projects/">All projects →</a></p>
   <p class="label">Writing</p>
-  {posts.length === 0 ? (
-    <p class="empty">First post is on the way.</p>
-  ) : (
-    <ul class="list">
-      {posts.map((p) => (
-        <li>
-          <div class="row">
-            <a class="title" href={`/writing/${p.id}/`}>{p.data.title}</a>
-            <time datetime={p.data.date.toISOString()}>{fmtDate(p.data.date)}</time>
-          </div>
-        </li>
-      ))}
-    </ul>
-  )}
+  <ul class="list">
+    {posts.map((p) => (
+      <li>
+        <div class="row">
+          <a class="title" href={`/writing/${p.id}/`}>{p.data.title}</a>
+          <time datetime={p.data.date.toISOString()}>{fmtDate(p.data.date)}</time>
+        </div>
+      </li>
+    ))}
+    {EXTERNAL_WRITING.map((e) => (
+      <li>
+        <div class="row">
+          <a class="title" href={e.href}>{e.title} ↗</a>
+          <time datetime={e.date.toISOString()}>{fmtDate(e.date)}</time>
+        </div>
+        <p>{e.venue}</p>
+      </li>
+    ))}
+  </ul>
 
 </Base>

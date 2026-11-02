@@ -12,7 +12,7 @@ export const RESUME = {
       period: 'Sep 2026 – Present',
       points: [
         'Prototype and prove out new solutions with vendors and internal groups, then hand working deliverables to delivery teams.',
-        'Built a proof-of-concept agentic application solo in under two weeks, running end to end on Databricks (Apps, Lakebase, durable workflows with DBOS, agents) with a React, Express and FastAPI stack.',
+        'Built a proof-of-concept agentic application solo in about ten working days, running end to end on Databricks (Apps, Lakebase, durable workflows with DBOS, agents) with a React, Express and FastAPI stack.',
         'Evaluating ontology, taxonomy and master-data tooling on Databricks.',
       ],
     },
@@ -21,8 +21,13 @@ export const RESUME = {
       org: 'CLA',
       period: 'Dec 2024 – Sep 2026',
       points: [
-        'Built ML platform tooling on Databricks and Azure: Unity Catalog, MLflow, Asset Bundles, CI/CD and Terraform.',
-        'Designed a production document extraction system using Postgres as a work queue.',
+        'Led and mentored an MLOps team of five to six engineers.',
+        'Built the ML platform on Databricks and Azure (Unity Catalog, MLflow, Asset Bundles, CI/CD, Terraform), giving the ML team and several data science teams a repeatable path to production.',
+        'Platform runs classic models and LLM document extraction agents, including a yearly job that trains 132 models in parallel.',
+        'Proved out and put Redgate Flyway into production for database migrations on two paths: GitHub Actions to AKS, and an internal Python package that runs migrations as a Databricks job against Lakebase, scaffolding its Makefile, job notebook and bundle.',
+        'Wrote the team playbook, handoff guide and repo conventions; they became the team standard and the base my successor built on.',
+        'Designed a production agentic document extraction system for audit on Databricks (Lakebase Postgres as queue, Apps, Lakeflow Jobs, MLflow tracing), cutting extraction time from hours to minutes; 24 document types in production for hundreds of users.',
+        'Co-authored a Databricks blog post on the architecture with Databricks Forward Deployed Engineering.',
       ],
     },
     {
