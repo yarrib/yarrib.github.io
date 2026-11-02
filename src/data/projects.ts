@@ -13,11 +13,12 @@ export const PROJECTS: Project[] = [
     name: 'dex',
     tagline: 'Extensible project scaffolding for data teams',
     description:
-      'A Rust CLI that scaffolds data projects (Python packages, Databricks Asset Bundles, AI agent projects) from templates teams can extend with their own tooling. Shipped as a single binary with versioned public releases.',
-    stack: ['Rust', 'CLI', 'Databricks', 'Templates'],
+      'A Rust CLI that scaffolds data projects (Python packages, Databricks Asset Bundles, AI agent projects) from templates teams can extend with their own tooling. v0.7.0 adds a durable agent template on DBOS: runs survive crashes and resume without re-calling the model, with human approval steps built in.',
+    stack: ['Rust', 'CLI', 'Databricks', 'DBOS', 'Templates'],
     links: [
       { label: 'Docs', href: 'https://yarrib.github.io/dex' },
       { label: 'GitHub', href: 'https://github.com/yarrib/dex' },
+      { label: 'v0.7.0', href: 'https://github.com/yarrib/dex/releases/tag/v0.7.0' },
     ],
     featured: true,
   },
