@@ -18,10 +18,17 @@ const posts = (await getPosts()).slice(0, 5);
     I like building tools that make other engineers faster, and I write here about what I learn doing it.
   </p>
   {dbxCerts.length > 0 && (
-    <p class="cert-line">
-      <span class="cert-badge">Databricks certified</span>
-      <a href="/resume/">{dbxCerts.length} Databricks certifications, plus Microsoft Azure →</a>
-    </p>
+    <div class="cert-strip">
+      <a class="cert-badges" href="/resume/" aria-label="Certifications">
+        {dbxCerts.filter((c) => c.image).map((c) => (
+          <img src={c.image} alt={`Databricks ${c.name}`} title={`Databricks ${c.name}`} width="60" height="80" />
+        ))}
+      </a>
+      <p class="cert-line">
+        <span class="cert-badge">Databricks certified</span>
+        <a href="/resume/">{dbxCerts.map((c) => c.name).join(' · ')} →</a>
+      </p>
+    </div>
   )}
 
   <p class="label">Selected work</p>

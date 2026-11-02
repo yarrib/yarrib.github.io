@@ -16,6 +16,7 @@ const otherCerts = RESUME.certifications.filter((c) => !c.featured);
       <div class="cert-grid">
         {featuredCerts.map((c) => (
           <a class="cert" href={c.href}>
+            {c.image && <img class="cert-img" src={c.image} alt={`${c.issuer} ${c.name} badge`} width="90" height="120" loading="lazy" />}
             <span class="cert-issuer">{c.issuer}</span>
             <strong>{c.name}</strong>
             <span class="cert-meta">{c.year ? `${c.year} · ` : ''}Verify →</span>

@@ -114,3 +114,11 @@ nav { row-gap: 0.3rem; flex-wrap: wrap; }
 .cert-issuer { text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; color: var(--accent); }
 .cert-line { font: 0.9rem var(--sans); display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; }
 .cert-badge { font-weight: 600; color: var(--bg); background: var(--accent); padding: 0.15rem 0.6rem; border-radius: 999px; }
+
+.cert { align-items: flex-start; }
+.cert-img { width: 90px; height: auto; margin-bottom: 0.4rem; }
+.cert-strip { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; margin: 1.25rem 0 0; }
+.cert-badges { display: flex; gap: 0.5rem; }
+.cert-badges img { width: 60px; height: auto; transition: transform 0.15s; }
+.cert-badges:hover img { transform: translateY(-2px); }
+.cert-strip .cert-line { margin: 0; flex: 1 1 16rem; }
