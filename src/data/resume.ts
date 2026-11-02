@@ -3,7 +3,7 @@ export type Cert = { name: string; issuer: string; year: string; href?: string; 
 // Edit this file to update the Resume page. Dates are plain strings.
 export const RESUME = {
   summary:
-    'Engineer who solves problems across data platforms, ML infrastructure and AI agents. I clear up the ambiguity, build quickly with a tight scope, and bridge the business and the tech.',
+    'Engineer who solves problems across data platforms, ML infrastructure and AI agents. I clear up the ambiguity, build quickly at a suitable scope, bridge the business and the tech, and turn what works into patterns others can reuse.',
   pdf: '', // e.g. '/resume.pdf' once you drop a PDF in public/
   experience: [
     {

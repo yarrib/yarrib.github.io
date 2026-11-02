@@ -13,10 +13,11 @@ const featured = PROJECTS.filter((p) => p.featured);
 const posts = (await getPosts()).slice(0, 5);
 ---
 <Base>
-  <h1>I turn ideas into working systems.</h1>
+  <h1>I turn ideas into systems.</h1>
   <p class="lede">
     I'm Yarri Bryn. I solve problems. I start by clearing up the ambiguity, figure it out as I go, then build fast
-    with a tight scope. I work across domains, bridge the business and the tech, and help the people around me.
+    at a suitable scope. I work across domains, bridge the business and the tech, and turn what works into
+    patterns other people can reuse.
   </p>
   {dbxCerts.length > 0 && (
     <div class="cert-strip">
