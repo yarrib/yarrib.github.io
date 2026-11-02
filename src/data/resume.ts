@@ -7,26 +7,37 @@ export const RESUME = {
     {
       role: 'Staff Innovation Engineer',
       org: 'CLA',
-      period: 'Present',
+      period: 'Sep 2026 – Present',
       points: [
         'Prototype and prove out new solutions with vendors and internal groups, then hand working deliverables to delivery teams.',
+        'Built a proof-of-concept agentic application solo in under two weeks, running end to end on Databricks (Apps, Lakebase, durable workflows with DBOS, agents) with a React, Express and FastAPI stack.',
         'Evaluating ontology, taxonomy and master-data tooling on Databricks.',
       ],
     },
     {
-      role: 'Platform / MLOps Engineer',
+      role: 'MLOps Lead / ML Platform Developer',
       org: 'CLA',
-      period: '',
+      period: 'Dec 2024 – Sep 2026',
       points: [
         'Built ML platform tooling on Databricks and Azure: Unity Catalog, MLflow, Asset Bundles, CI/CD and Terraform.',
         'Designed a production document extraction system using Postgres as a work queue.',
       ],
     },
     {
-      role: 'Data Scientist / Data Engineer',
-      org: 'Wipfli LLP',
-      period: '2022',
+      role: 'Senior Data Scientist',
+      org: 'CLA',
+      period: 'Sep 2024 – Dec 2024',
       points: [],
+    },
+    {
+      role: 'Data Scientist',
+      org: 'Wipfli LLP',
+      period: 'Jan 2022 – Sep 2024',
+      points: [
+        'Delivered end-to-end applied AI/ML projects for internal IT.',
+        'Implemented MLOps practices and explored generative AI capabilities.',
+        'Solved business problems with creative combinations of tools and techniques.',
+      ],
     },
     {
       role: 'Parking & Business Systems Professional',
