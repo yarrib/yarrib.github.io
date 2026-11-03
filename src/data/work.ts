@@ -40,7 +40,7 @@ export const WORK: CaseStudy[] = [
     summary:
       'Took a product idea from blank page to a deployable, multi-feature agentic app solo, so stakeholders could react to real software instead of slides.',
     problem:
-      'A new AI product concept needed to be proven quickly enough to inform a build decision, and handed off cleanly to an application team afterward.',
+      'A new AI product concept needed to be proven quickly enough to inform a build decision, and built so an application team could take it forward.',
     approach: [
       'Designed the app as portable layers: React front end, Express and FastAPI services, and a separate agent layer.',
       'Ran it end to end on Databricks Apps, with Lakebase for state and DBOS for durable, resumable agent workflows.',

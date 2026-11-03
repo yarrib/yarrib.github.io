@@ -3,7 +3,7 @@ export type Cert = { name: string; issuer: string; year: string; href?: string; 
 // Edit this file to update the Resume page. Dates are plain strings.
 export const RESUME = {
   summary:
-    'Engineer focused on data platforms, ML infrastructure and AI agents. I prototype new solutions, prove them out with real users, and hand them off to the teams that run them.',
+    'Engineer who solves problems across data platforms, ML infrastructure and AI agents. I'm comfortable with vague problems, build quickly, bridge the business and the tech, and turn what works into patterns others can reuse.',
   pdf: '', // e.g. '/resume.pdf' once you drop a PDF in public/
   experience: [
     {
@@ -11,7 +11,7 @@ export const RESUME = {
       org: 'CLA',
       period: 'Sep 2026 – Present',
       points: [
-        'Prototype and prove out new solutions with vendors and internal groups, then hand working deliverables to delivery teams.',
+        'Come up with new solutions, build them and evaluate tooling with vendors and internal groups, to the point a delivery team can run them.',
         'Built a proof-of-concept agentic application solo in about ten working days, running end to end on Databricks (Apps, Lakebase, durable workflows with DBOS, agents) with a React, Express and FastAPI stack.',
         'Evaluating ontology, taxonomy and master-data tooling on Databricks.',
       ],
