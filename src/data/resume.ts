@@ -2,8 +2,13 @@ export type Cert = { name: string; issuer: string; year: string; href?: string; 
 
 // Edit this file to update the Resume page. Dates are plain strings.
 export const RESUME = {
+  contact: {
+    location: 'Minnesota',
+    email: 'yarri.bryn@gmail.com',
+    linkedin: 'https://www.linkedin.com/in/yarribryn',
+  },
   summary:
-    'Engineer who solves problems across data platforms, ML infrastructure and AI agents. Comfortable with vague problems, quick to build, and good at bridging the business and the tech and turning what works into patterns others can reuse.',
+    'Machine Learning and AI solutions leader with extensive experience building scalable, governed platforms in the Azure and Databricks ecosystem. Skilled at designing reusable patterns, CI/CD frameworks, and governance models that enable enterprise adoption of ML and Generative AI. Bridges strategy and execution: mentoring teams, collaborating with executives, and delivering measurable performance, cost, and productivity gains. Passionate about enabling teams to innovate while ensuring operational excellence.',
   pdf: '', // e.g. '/resume.pdf' once you drop a PDF in public/
   experience: [
     {
@@ -11,57 +16,83 @@ export const RESUME = {
       org: 'CLA',
       period: 'Sep 2026 – Present',
       points: [
-        'Come up with new solutions, build them and evaluate tooling with vendors and internal groups, to the point a delivery team can run them.',
-        'Built a proof-of-concept agentic application solo in about ten working days, running end to end on Databricks (Apps, Lakebase, durable workflows with DBOS, agents) with a React, Express and FastAPI stack.',
-        'Evaluating ontology, taxonomy and master-data tooling on Databricks.',
+        'Conceived and built an internal AI chat agent platform in under 3 weeks, with durable agentic workflow orchestration, built for speed, scalability, and extensibility to future context-as-a-service use cases.',
+        'Built and published reusable Python packages for Databricks apps, lakehouse, MLflow, and ETL work that teams adopt directly.',
+        "Delivered v2 of CLA's centralized CI/CD patterns, migrating the document extraction workflows onto shared versions and reassigning ownership and migrations to the central patterns (Nov 2026).",
       ],
     },
     {
-      role: 'MLOps Lead / ML Platform Developer',
+      role: 'Lead MLOps Engineer',
       org: 'CLA',
-      period: 'Dec 2024 – Sep 2026',
+      period: 'Jul 2025 – Sep 2026',
       points: [
-        'Led and mentored an MLOps team of five to six engineers.',
-        'Built the ML platform on Databricks and Azure (Unity Catalog, MLflow, Asset Bundles, CI/CD, Terraform), giving the ML team and several data science teams a repeatable path to production.',
-        'Platform runs classic models and LLM document extraction agents, including a yearly job that trains 132 models in parallel.',
-        'Proved out and put Redgate Flyway into production for database migrations on two paths: GitHub Actions to AKS, and an internal Python package that runs migrations as a Databricks job against Lakebase, scaffolding its Makefile, job notebook and bundle.',
-        'Wrote the team playbook, handoff guide and repo conventions; they became the team standard and the base my successor built on.',
-        'Designed a production agentic document extraction system for audit on Databricks (Lakebase Postgres as queue, Apps, Lakeflow Jobs, MLflow tracing), cutting extraction time from hours to minutes; 24 document types in production for hundreds of users.',
-        'Co-authored a Databricks blog post on the architecture with Databricks Forward Deployed Engineering.',
+        "Led MLOps for CLA's ML platform and mentored 5-6 engineers.",
+        'Built the initial batch workflow that accelerated extraction across 200k+ documents (Jun 2026).',
+        'Partnered with Databricks on a durable orchestration pattern on Lakebase Postgres for production document extraction, featured in a Databricks blog post.',
+        'Repurposed the pattern (extraction) for additional workloads, winning out document processing for 20+ document types by proving cost, durability, and efficiency, with 60+ types planned for production by year-end 2026.',
+        'Built an AI Gateway on Azure Databricks with Azure AI Foundry, giving teams secure, role-based LLM access over private networking.',
+        'Set Python CI, deployment, and IaC standards across multiple Databricks stacks, with playbooks the team still uses.',
+        'Deployed a full-stack Lakebase app in a matter of weeks (Aug 2026), with the backend and frontend as separate service repos, which led to my reusable utils packages.',
+        'Built an extraction ETL pipeline from an unfamiliar API to speed up data engineering work, and coordinated cross-metastore data sharing as an interim solution that unblocked DS and ML work.',
+      ],
+    },
+    {
+      role: 'Senior MLOps Engineer',
+      org: 'CLA',
+      period: 'Dec 2024 – Jun 2025',
+      points: [
+        'Built an Azure Document Intelligence promotion tool for moving custom models into higher environments, and an AI training opt-out CRUD app handed off to data engineering.',
+        'Built up the MLOps team and practice, defining roles, playbooks, and deployment patterns.',
+        'Built DAB templates with CI/CD across 5 environments.',
+        'Parallelized batch inference and training for 132 models on Databricks Serverless, cutting ETL runtime 70% and training runtime 50%.',
       ],
     },
     {
       role: 'Senior Data Scientist',
       org: 'CLA',
       period: 'Sep 2024 – Dec 2024',
-      points: [],
-    },
-    {
-      role: 'Data Scientist',
-      org: 'Wipfli LLP',
-      period: 'Jan 2022 – Sep 2024',
       points: [
-        'Delivered end-to-end applied AI/ML projects for internal IT.',
-        'Implemented MLOps practices and explored generative AI capabilities.',
-        'Solved business problems with creative combinations of tools and techniques.',
+        'Top contributor to the R-to-Python rewrite of a scheduling application, leading in PR acceptance and test coverage.',
+        'Refactored its linear programming model, improving runtime 20%+.',
+        'Developed Azure DevOps pipelines to test and deploy legacy DS solutions into Databricks via Asset Bundles.',
+        'Configured development workflows that let R developers onboard smoothly into Python.',
+        'Supported the transition to a new MLOps function, helping define practices and team roles.',
       ],
     },
     {
-      role: 'Parking & Business Systems Professional',
-      org: 'Minneapolis Park and Recreation Board',
-      period: '2015 – 2022',
-      points: [],
+      role: 'Data Scientist & ML/AI Engineer',
+      org: 'Wipfli LLP',
+      period: 'Jan 2022 – Sep 2024',
+      points: [
+        "Built Wipfli's Azure Databricks lakehouse with Terraform, Unity Catalog, medallion architecture, and CI/CD, the foundation for the firm's data engineering and AI/ML work.",
+        'Led a team that built an AI slide-deck app, saving $1.2M a year in staff time.',
+        'Built an AI document review workflow for 800+ documents, saving $50K and contributing to a 15% profit increase.',
+        'Delivered 15+ GenAI prototypes with executives (LangChain, Azure AI, Databricks).',
+        'Mentored teams on DevOps, Git, and Databricks practices; represented the firm on a Generative AI industry panel.',
+      ],
     },
     {
-      role: 'Professional Golfer',
+      role: 'Parking & Business Systems Professional / Analyst',
+      org: 'Minneapolis Park and Recreation Board',
+      period: '2015 – 2022',
+      points: [
+        'Built cross-departmental forecasting models, ETL pipelines, and BI solutions that generated $370k+ in annual savings.',
+        "Launched and scaled the agency's Power BI platform, including developer and executive training.",
+        "Led technology RFPs and vendor selection, leading to the creation of the agency's centralized Data Team.",
+        'Designed and implemented parking systems that improved operations and customer experience, including mobile payment adoption.',
+        'Optimized pay parking rate structures through analysis and forecasting, averaging a $240k increase in recurring annual revenue year over year.',
+      ],
+    },
+    {
+      role: 'Touring Golf Professional',
       org: 'Self-employed',
       period: '2013 – 2017',
-      points: [],
+      points: ['Competed in professional tournaments nationwide, including Korn Ferry Tour qualifiers.'],
     },
   ],
   education: [
-    { degree: 'M.S. Data Science', school: 'University of Wisconsin–Eau Claire', period: '2019 – 2022' },
-    { degree: 'B.A. Marketing Management', school: 'University of Northern Iowa', period: '2009 – 2013' },
+    { degree: 'M.S. Data Science', school: 'University of Wisconsin–Eau Claire', period: '2022', note: '4.0 GPA' },
+    { degree: 'B.A. Marketing Management', school: 'University of Northern Iowa', period: '2013', note: 'Honors, NCAA Division I athlete' },
   ],
   // Databricks certs are featured: shown first, as badge cards. Check each name matches its credential link.
   certifications: [

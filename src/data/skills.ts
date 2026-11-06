@@ -1,10 +1,8 @@
 // Edit this file to update the Skills page.
 export const SKILLS = [
-  { group: 'Data & ML platforms', items: ['Databricks', 'Unity Catalog', 'MLflow', 'Databricks Asset Bundles', 'Spark'] },
-  { group: 'Cloud & infrastructure', items: ['Azure', 'Terraform', 'CI/CD (GitHub Actions, Azure DevOps)', 'Docker'] },
-  { group: 'AI & agents', items: ['Agent design & evaluation', 'OpenAI Agents SDK', 'LangChain', 'DSPy', 'Durable execution (DBOS)', 'MLflow tracing / OpenTelemetry'] },
-  { group: 'Languages', items: ['Python', 'SQL', 'Rust', 'TypeScript'] },
-  { group: 'Data stores', items: ['Postgres', 'Lakebase', 'Neon', 'Delta Lake', 'SQLite'] },
-  { group: 'Web', items: ['React', 'Next.js', 'Sanity CMS', 'Vercel', 'FastAPI'] },
-  { group: 'Ways of working', items: ['Prototyping & PoCs', 'Developer experience', 'Communication & alignment', 'Mentoring'] },
+  { group: 'Cloud & ML platforms', items: ['Azure', 'Azure Databricks', 'Azure AI Foundry', 'MLflow', 'Lakebase'] },
+  { group: 'DevOps & governance', items: ['CI/CD', 'Terraform (IaC)', 'Databricks Asset Bundles', 'GitHub Actions', 'Azure DevOps', 'Unity Catalog', 'AI Gateway'] },
+  { group: 'AI/ML', items: ['Generative AI (LangChain, BAML, DSPy)', 'Agentic workflow orchestration', 'LLM Ops', 'MLflow tracing', 'ML pipelines', 'Model observability'] },
+  { group: 'Data engineering', items: ['Medallion architecture', 'PySpark', 'SQL', 'Postgres', 'Redgate Flyway migrations'] },
+  { group: 'Programming', items: ['Python', 'Rust (emerging)', 'R', 'Docker'] },
 ];
