@@ -7,6 +7,9 @@ const otherCerts = RESUME.certifications.filter((c) => !c.featured);
 ---
 <Base title="Resume" description="Experience and education.">
   <h1>Resume</h1>
+  <p class="muted" style="margin:0 0 1rem">
+    {RESUME.contact.location} · <a href={`mailto:${RESUME.contact.email}`}>{RESUME.contact.email}</a> · <a href={RESUME.contact.linkedin}>LinkedIn</a>
+  </p>
   <p class="lede">{RESUME.summary}</p>
   {RESUME.pdf && <p><a href={RESUME.pdf}>Download PDF</a></p>}
 
@@ -46,7 +49,7 @@ const otherCerts = RESUME.certifications.filter((c) => !c.featured);
     {RESUME.education.map((e) => (
       <li>
         <div class="row">
-          <span><strong>{e.degree}</strong> <span class="muted">· {e.school}</span></span>
+          <span><strong>{e.degree}</strong> <span class="muted">· {e.school}{e.note ? ` (${e.note})` : ''}</span></span>
           <span class="meta">{e.period}</span>
         </div>
       </li>
