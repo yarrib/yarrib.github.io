@@ -1,8 +1,8 @@
 // Edit this file to update the Skills page.
 export const SKILLS = [
-  { group: 'Cloud & ML platforms', items: ['Azure', 'Azure Databricks', 'Azure AI Foundry', 'MLflow', 'Lakebase'] },
-  { group: 'DevOps & governance', items: ['CI/CD', 'Terraform (IaC)', 'Databricks Asset Bundles', 'GitHub Actions', 'Azure DevOps', 'Unity Catalog', 'AI Gateway'] },
-  { group: 'AI/ML', items: ['Generative AI (LangChain, BAML, DSPy)', 'Agentic workflow orchestration', 'LLM Ops', 'MLflow tracing', 'ML pipelines', 'Model observability'] },
+  { group: 'Cloud & data platforms', items: ['Azure', 'Azure Databricks', 'Azure AI Foundry', 'Unity Catalog', 'Lakebase'] },
   { group: 'Data engineering', items: ['Medallion architecture', 'PySpark', 'Postgres', 'Redgate Flyway migrations'] },
-  { group: 'Programming', items: ['Python', 'Rust', 'SQL', 'JavaScript / TypeScript'] },
+  { group: 'MLOps & delivery', items: ['MLflow', 'ML pipelines', 'Model observability', 'CI/CD (GitHub Actions, Azure DevOps)', 'Databricks Asset Bundles', 'Terraform (IaC)', 'Containers (Docker, AKS)'] },
+  { group: 'AI & agents', items: ['Agentic workflow orchestration', 'LLM Ops', 'MLflow tracing', 'AI Gateway & governance', 'LangChain', 'DSPy', 'BAML'] },
+  { group: 'Languages', items: ['Python', 'Rust', 'SQL', 'JavaScript / TypeScript'] },
 ];
